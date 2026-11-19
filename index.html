@@ -4,454 +4,317 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
-<meta name="theme-color" content="#0A0A0A">
+<meta name="theme-color" content="#0b2545">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="Odontologia UNIFEB">
-<title>Odontologia · Central Acadêmica</title>
+<meta name="apple-mobile-web-app-title" content="Central UNIFEB">
+<title>Central Acadêmica · Odontologia</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="shortcut icon" href="icon-192.png">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-192.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 :root{
-  --navy:#0B2545;--navy2:#123A6B;--blue:#1565C0;--sky:#E8F0FA;
-  --ink:#0B2545;--bg:#F4F7FB;--paper:#FFFFFF;--muted:#5C6B80;
-  --line:rgba(11,37,69,.12);--card:#FFFFFF;--card2:#FBFDFF;
-  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-  --disp:"Space Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  --body:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --navy:#0b2545;--navy2:#123a6b;--blue:#1565c0;--sky:#e8f0fa;--line:#dbe4ef;
+  --ink:#0f1d2e;--muted:#64748b;--bg:#f5f8fc;--card:#ffffff;--ok:#1f7a45;--warn:#b45309;--terra:#c4622d;
 }
-html,body{margin:0;padding:0;background:var(--bg)}
-body{color:var(--ink);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
-.shell{overflow-x:clip}
-#fx{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.55}
-.shell{position:relative;z-index:1}
-.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
-
-header{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(244,247,251,.86);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;gap:16px;padding:13px 0}
-.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
-.brand img{width:30px;height:30px;display:block;border-radius:8px}
-.brand span{font-family:var(--disp);font-weight:600;font-size:14.5px;letter-spacing:-.01em;color:var(--navy);text-transform:lowercase}
-nav{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;margin-left:auto}
-nav::-webkit-scrollbar{display:none}
-nav button{font-family:var(--body);font-size:12.5px;font-weight:600;white-space:nowrap;border:1px solid var(--line);cursor:pointer;padding:8px 14px;border-radius:999px;background:#fff;color:var(--navy);transition:.18s}
-nav button.on{background:var(--navy);border-color:var(--navy);color:#fff}
-nav button:not(.on):hover{border-color:var(--navy)}
-
-.hero{padding:44px 0 8px;position:relative;overflow:hidden}
-.hero .mark-bg{position:absolute;right:-18px;top:6px;width:190px;height:190px;opacity:.05;pointer-events:none}
-.eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.sq{width:7px;height:7px;background:var(--blue);display:inline-block;border-radius:1px}
-h1{font-family:var(--disp);font-weight:600;font-size:clamp(34px,9vw,66px);line-height:.97;letter-spacing:-.035em;margin:18px 0 0;position:relative;color:var(--navy)}
-h1 em{font-style:normal;color:var(--blue)}
-.lede{font-size:14px;line-height:1.6;color:var(--muted);max-width:48ch;margin:16px 0 0}
-.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:32px}
-.stat{background:var(--bg);padding:20px 4px 20px 0}
-.stat .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
-.stat .v{font-family:var(--disp);font-weight:600;font-size:clamp(28px,7.2vw,44px);letter-spacing:-.04em;line-height:1;margin-top:8px;color:var(--navy)}
-.stat .v small{font-size:.36em;font-weight:500;color:var(--muted);margin-left:4px;letter-spacing:0}
-.stat .n{font-size:11.5px;color:var(--muted);margin-top:6px;line-height:1.35}
-
-section.tab{display:none;padding-bottom:60px}
-section.tab.on{display:block}
-h2{font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:400;margin:46px 0 14px;display:flex;align-items:center;gap:9px}
-h2:before{content:"";width:7px;height:7px;background:var(--blue);border-radius:1px;flex:0 0 auto}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 1px 2px rgba(11,37,69,.04)}
-.row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;font-size:14px;padding:12px 0;border-bottom:1px solid var(--line)}
-.row:last-child{border-bottom:0;padding-bottom:0}
-.row:first-child{padding-top:0}
-.row b{font-family:var(--disp);font-weight:600;font-variant-numeric:tabular-nums;white-space:nowrap;text-align:right;color:var(--navy)}
-.row .mut{color:var(--muted);font-size:12px;font-weight:400}
-.bar{height:6px;background:var(--sky);border-radius:99px;overflow:hidden;margin:14px 0 12px}
-.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--navy));border-radius:99px;transition:width .8s cubic-bezier(.2,.7,.2,1)}
-.tagline{font-size:12.5px;color:var(--muted);line-height:1.6;margin:0}
-a.lk{color:var(--blue);text-decoration:none;border-bottom:1px solid rgba(21,101,192,.4)}
-
-.per{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:4px}
-.per div{border:1px solid var(--line);border-radius:9px;padding:10px 6px;text-align:center;background:#fff}
-.per div.now{border-color:var(--navy);background:var(--navy)}
-.per b{display:block;font-family:var(--disp);font-size:15px;font-weight:600;color:var(--navy)}
-.per span{font-family:var(--mono);font-size:8.5px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
-.per div.now b{color:#fff}
-.per div.now span{color:rgba(255,255,255,.75)}
-
-.chart{display:flex;align-items:flex-end;gap:8px;height:150px;padding-top:10px}
-.chart .col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:6px;height:100%}
-.chart .bar2{width:100%;max-width:34px;background:linear-gradient(180deg,var(--blue),var(--navy));border-radius:4px 4px 2px 2px;min-height:3px;transition:height .7s cubic-bezier(.2,.7,.2,1)}
-.chart .num{font-family:var(--mono);font-size:10px;color:var(--muted)}
-.chart .cap{font-family:var(--mono);font-size:9px;color:var(--muted);text-align:center;height:24px;overflow:hidden;line-height:1.15}
-
+@media(prefers-color-scheme:dark){
+  :root{--navy:#0a1a2f;--navy2:#12304f;--sky:#12253c;--line:#1f3550;--ink:#e8eef6;--muted:#8fa3ba;--bg:#071322;--card:#0d1f33;--blue:#4c9bff;--terra:#e0844c}
+}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;padding-bottom:78px}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header.top{background:linear-gradient(160deg,var(--navy),var(--navy2));color:#fff;padding:22px 0 26px;border-radius:0 0 22px 22px;box-shadow:0 8px 24px rgba(11,37,69,.18)}
+.top .wrap{display:flex;gap:14px;align-items:center}
+.mark{width:48px;height:48px;border-radius:13px;background:#fff;display:grid;place-items:center;flex:0 0 auto;box-shadow:0 3px 10px rgba(0,0,0,.18)}
+.mark svg{width:48px;height:48px;border-radius:13px;display:block}
+.kick{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:#a9c4e6}
+h1{font-size:19px;margin:3px 0 2px;font-weight:700;letter-spacing:-.01em}
+.sub{font-size:12px;color:#c6d8ee}
+h2{font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:26px 0 10px;font-weight:700}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:-14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px}
+.card .lbl{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.card .val{font-size:26px;font-weight:700;letter-spacing:-.03em;margin-top:4px;line-height:1}
+.card .val small{font-size:12px;font-weight:600;color:var(--muted);margin-left:3px}
+.card .note{font-size:11.5px;color:var(--muted);margin-top:5px;line-height:1.35}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-size:13.5px;padding:9px 0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row b{font-variant-numeric:tabular-nums;white-space:nowrap}
+.row .mut{color:var(--muted);font-size:12px}
+.bar{height:7px;background:var(--sky);border-radius:99px;overflow:hidden;margin-top:7px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--blue),var(--navy2));border-radius:99px}
+.chart{display:flex;align-items:flex-end;gap:7px;height:130px;padding-top:8px}
+.chart .col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:5px;height:100%}
+.chart .bar2{width:100%;background:linear-gradient(180deg,var(--blue),var(--navy2));border-radius:6px 6px 3px 3px;min-height:3px;transition:height .4s}
+.chart .cap{font-size:9.5px;color:var(--muted);text-align:center;line-height:1.15;height:22px;overflow:hidden}
+.chart .num{font-size:10.5px;font-weight:700;color:var(--ink)}
 table{width:100%;border-collapse:collapse;font-size:13.5px}
-th{text-align:left;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:400;padding:0 0 10px;border-bottom:1.5px solid var(--navy)}
-td{padding:12px 0;border-bottom:1px solid var(--line);vertical-align:top}
-td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:10px;font-family:var(--disp);font-weight:600;color:var(--navy)}
-td.cod{font-family:var(--mono);font-size:11px;color:var(--muted)}
-
-details{border:1px solid var(--line);border-radius:14px;margin-bottom:8px;background:#fff;overflow:hidden}
-details[open]{border-color:rgba(21,101,192,.45)}
-summary{padding:15px 16px;font-size:13.5px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;gap:12px;align-items:center;list-style:none;color:var(--navy)}
+th{text-align:left;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);font-weight:700;padding:0 0 7px;border-bottom:1.5px solid var(--ink)}
+td{padding:10px 0;border-bottom:1px solid var(--line);vertical-align:top}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:8px}
+details{border:1px solid var(--line);border-radius:12px;margin-bottom:8px;background:var(--card);overflow:hidden}
+details[open]{border-color:var(--blue)}
+summary{padding:12px 14px;font-size:13.5px;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;gap:10px;align-items:center;list-style:none}
 summary::-webkit-details-marker{display:none}
-summary .cnt{font-family:var(--mono);font-size:10px;color:var(--muted);white-space:nowrap;font-weight:400}
-.files{padding:0 16px 14px}
-.files a{display:block;font-size:13px;color:var(--navy);text-decoration:none;padding:10px 0;border-top:1px solid var(--line);line-height:1.4}
-.files a:hover{color:var(--blue)}
-.files a span{color:var(--muted);font-family:var(--mono);font-size:10px;display:block;margin-top:3px}
-
-.check{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);cursor:pointer;font-size:13.5px;line-height:1.4}
-.check:last-child{border-bottom:0}
-.check input{appearance:none;width:19px;height:19px;flex:0 0 auto;border:1.5px solid rgba(11,37,69,.3);border-radius:5px;margin:1px 0 0;cursor:pointer;position:relative;transition:.15s;background:#fff}
-.check input:checked{background:var(--blue);border-color:var(--blue)}
-.check input:checked:after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg)}
-.check input:checked+span{color:var(--muted);text-decoration:line-through}
-
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:15px;border-radius:999px;border:0;background:var(--navy);color:#fff;font-family:var(--body);font-size:14px;font-weight:600;text-decoration:none;cursor:pointer;transition:.18s}
-.btn:hover{background:var(--navy2)}
-.btn.ghost{background:#fff;color:var(--navy);border:1px solid var(--line)}
-.btn.ghost:hover{border-color:var(--navy)}
-.empty{text-align:center;padding:26px 10px}
-.empty .big{font-family:var(--disp);font-size:17px;font-weight:600;margin-bottom:8px;color:var(--navy)}
-.empty p{font-size:13px;color:var(--muted);line-height:1.6;margin:0 0 18px}
+summary .cnt{font-size:11px;color:var(--muted);font-weight:600;white-space:nowrap}
+.files{padding:0 14px 12px}
+.files a{display:block;font-size:13px;color:var(--blue);text-decoration:none;padding:7px 0;border-top:1px dashed var(--line);line-height:1.35}
+.files a span{color:var(--muted);font-size:11px;display:block;margin-top:2px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:13px;border-radius:12px;border:0;background:linear-gradient(180deg,#1976d2,#12559b);color:#fff;font-size:14.5px;font-weight:700;text-decoration:none;box-shadow:0 3px 0 #0d3f76;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--blue);border:1.5px solid var(--line);box-shadow:none}
+.btn:active{transform:translateY(1px)}
+.empty{text-align:center;padding:18px 8px}
+.empty .big{font-size:15px;font-weight:700;margin-bottom:6px}
+.empty p{font-size:13px;color:var(--muted);line-height:1.5;margin:0 0 14px}
 .steps{counter-reset:s;list-style:none;padding:0;margin:0}
-.steps li{counter-increment:s;position:relative;padding:0 0 16px 36px;font-size:13px;line-height:1.55;color:var(--ink)}
-.steps li:before{content:"0" counter(s);position:absolute;left:0;top:0;font-family:var(--mono);font-size:10px;color:var(--blue)}
-.steps li b{display:block;font-family:var(--disp);font-weight:600;font-size:13.5px;margin-bottom:2px;color:var(--navy)}
-.foot{margin:50px 0 0;padding-top:18px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);line-height:1.65}
-@media(max-width:719px){
-  .bar{flex-wrap:wrap;gap:10px;padding-bottom:10px}
-  nav{margin-left:0;width:100%;order:3}
-  nav button{font-size:12px;padding:8px 13px}
-  .hero .mark-bg{width:130px;height:130px;top:-6px;right:-26px}
-}
-@media(min-width:720px){
-  .stats{grid-template-columns:repeat(4,1fr)}
-  .stat{padding:24px 18px 24px 0}
-  .per{grid-template-columns:repeat(10,1fr)}
-  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
-}
-@media(prefers-reduced-motion:reduce){#fx{display:none}.bar i,.chart .bar2{transition:none}}
+.steps li{counter-increment:s;position:relative;padding:0 0 14px 34px;font-size:13px;line-height:1.5;color:var(--ink)}
+.steps li:before{content:counter(s);position:absolute;left:0;top:-1px;width:22px;height:22px;border-radius:50%;background:var(--sky);color:var(--navy);font-size:11.5px;font-weight:700;display:grid;place-items:center}
+@media(prefers-color-scheme:dark){.steps li:before{color:#cfe2f7}}
+.steps li b{display:block;margin-bottom:1px}
+.foot{font-size:11.5px;color:var(--muted);line-height:1.6;margin:22px 0 8px;padding-top:14px;border-top:1px solid var(--line)}
+nav.tabs{position:fixed;left:0;right:0;bottom:0;background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--line);display:flex;justify-content:space-around;padding:7px 4px calc(7px + env(safe-area-inset-bottom));z-index:9}
+nav.tabs button{background:0;border:0;display:flex;flex-direction:column;align-items:center;gap:3px;font-size:10px;color:var(--muted);font-weight:600;padding:5px 8px;border-radius:10px;cursor:pointer;flex:1}
+nav.tabs button svg{width:20px;height:20px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+nav.tabs button.on{color:var(--blue);background:var(--sky)}
+.tab{display:none}.tab.on{display:block}
+.pill{display:inline-block;font-size:10.5px;font-weight:700;padding:3px 8px;border-radius:99px;background:var(--sky);color:var(--navy)}
+@media(prefers-color-scheme:dark){.pill{color:#cfe2f7}}
+.tagline{font-size:11.5px;color:var(--muted);margin-top:8px}
+
+@keyframes sobe{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes aparece{from{opacity:0}to{opacity:1}}
+@keyframes pulsa{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+.cards .card{animation:sobe .55s cubic-bezier(.22,1,.36,1) both}
+.cards .card:nth-child(1){animation-delay:.05s}
+.cards .card:nth-child(2){animation-delay:.13s}
+.cards .card:nth-child(3){animation-delay:.21s}
+.cards .card:nth-child(4){animation-delay:.29s}
+.panel{animation:sobe .5s cubic-bezier(.22,1,.36,1) both;animation-delay:.2s}
+.tab.on{animation:aparece .35s both}
+.mark{animation:pulsa 3.4s ease-in-out infinite}
+.bar i{transition:width 1.15s cubic-bezier(.22,1,.36,1)}
+.bar2{transition:height 1s cubic-bezier(.22,1,.36,1),background .3s}
+.card{transition:transform .25s ease,box-shadow .25s ease}
+@media(hover:hover){.card:hover{transform:translateY(-3px);box-shadow:0 10px 26px rgba(11,37,69,.10)}}
+nav.tabs button{transition:background .2s,color .2s,transform .15s}
+nav.tabs button:active{transform:scale(.96)}
+.files a{transition:transform .18s ease,color .18s}
+@media(hover:hover){.files a:hover{transform:translateX(3px)}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
-<canvas id="fx" aria-hidden="true"></canvas>
-<div class="shell">
-<header><div class="wrap"><div class="bar">
-  <div class="brand"><img src="favicon.svg" alt=""><span>odontologia · unifeb</span></div>
-  <nav id="nav">
-    <button data-tab="painel" class="on">Painel</button>
-    <button data-tab="matriz">Matriz</button>
-    <button data-tab="clinica">Clínica</button>
-    <button data-tab="arq">Arquivos</button>
-    <button data-tab="ag">Agenda</button>
-  </nav>
-</div></div></header>
+<header class="top"><div class="wrap">
+  <div class="mark"><img src="logo.svg" alt="Central Acadêmica" width="48" height="48"></div>
+  <div><div class="kick" id="kick">UNIFEB · Odontologia</div><h1 id="titulo">Central Acadêmica</h1><div class="sub" id="sub">Carregando…</div></div>
+</div></header>
 
 <div class="wrap">
-  <div class="hero">
-    <svg class="mark-bg" viewBox="0 0 48 48" aria-hidden="true">
-      <path d="M24 9.4c-2.7 0-4.1 1.3-5.9 1.3-2.4 0-4.2 1.7-4.2 4.6 0 2.7 1 4.2 1.4 6.4.4 2.2.4 7 2.5 8.6 1.2.9 2.5-.2 2.8-2 .4-1.8.6-4.7 2.8-4.7s2.4 2.9 2.8 4.7c.4 1.8 1.6 2.9 2.8 2 2.1-1.6 2.1-6.4 2.5-8.6.4-2.2 1.4-3.7 1.4-6.4 0-2.9-1.8-4.6-4.2-4.6-1.8 0-3.2-1.3-5.9-1.3Z" fill="#0B2545"/>
-    </svg>
-    <div class="eyebrow"><i class="sq"></i><span id="eyebrow">UNIFEB · Odontologia · 2027/1</span></div>
-    <h1>Odontologia,<br>quatro mil e<br><em>trezentas horas.</em></h1>
-    <p class="lede" id="lede">Carregando seus dados…</p>
-    <div class="stats" id="stats"></div>
-  </div>
+  <div class="cards" id="cards"></div>
 
   <section class="tab on" id="t-painel">
     <h2>Carga horária</h2>
-    <div class="card">
+    <div class="panel">
       <div class="row"><span>Horas cumpridas</span><b id="p-h">—</b></div>
       <div class="bar"><i id="p-bar" style="width:0%"></i></div>
-      <p class="tagline" id="p-note"></p>
-      <div style="margin-top:14px">
-        <div class="row"><span>Componentes</span><b id="p-comp">—</b></div>
-        <div class="row"><span>Semestre</span><b id="p-sem">—</b></div>
-        <div class="row"><span>Situação</span><b id="p-sit">—</b></div>
-      </div>
-    </div>
-
-    <h2>Os dez períodos</h2>
-    <div class="card"><div class="per" id="periodos"></div>
-      <p class="tagline" style="margin-top:14px" id="per-note"></p>
+      <div class="tagline" id="p-note"></div>
+      <div class="row" style="margin-top:10px"><span>Componentes do curso</span><b id="p-comp">—</b></div>
+      <div class="row"><span>Semestre</span><b id="p-sem">—</b></div>
+      <div class="row"><span>Situação</span><b id="p-sit">—</b></div>
     </div>
 
     <h2>Portal do Aluno</h2>
-    <div class="card">
+    <div class="panel">
       <div class="row"><span>Etapa</span><b id="po-etapa">—</b></div>
       <div class="row"><span>Notas</span><b id="po-notas">—</b></div>
       <div class="row"><span>Faltas</span><b id="po-faltas">—</b></div>
       <div class="row"><span>Calendário de aulas</span><b id="po-cal">—</b></div>
-      <p class="tagline" id="po-lido" style="margin-top:12px"></p>
+      <div class="tagline" id="po-lido"></div>
     </div>
-
-    <h2>Financeiro acadêmico</h2>
-    <div class="card"><table><thead><tr><th>Descrição</th><th class="num">Valor</th><th class="num">Vence</th></tr></thead><tbody id="tb-fin"></tbody></table></div>
 
     <h2>Horas por disciplina · 1º período</h2>
-    <div class="card"><div class="chart" id="chart-disc"></div></div>
+    <div class="panel"><div class="chart" id="chart-disc"></div></div>
 
     <h2>Arquivos por área da pasta</h2>
-    <div class="card"><div class="chart" id="chart-areas"></div><p class="tagline" id="areas-note" style="margin-top:12px"></p></div>
+    <div class="panel"><div class="chart" id="chart-areas"></div><div class="tagline" id="areas-note"></div></div>
   </section>
 
-  <section class="tab" id="t-matriz">
-    <h2>Matriz do curso</h2>
-    <div class="card">
-      <div class="row"><span>Curso</span><b>Odontologia</b></div>
-      <div class="row"><span>Matriz</span><b id="m-grade">—</b></div>
-      <div class="row"><span>Carga total</span><b id="m-total">—</b></div>
-      <div class="row"><span>Componentes</span><b id="m-comp">—</b></div>
-      <div class="row"><span>Turno</span><b id="m-turno">—</b></div>
-      <div class="row"><span>Ingresso</span><b id="m-ing">—</b></div>
-      <a class="btn ghost" style="margin-top:16px" href="https://drive.google.com/file/d/1kE1rTWoU_xfzsmLpGW0Lla9JvosmPNh7/view" target="_blank" rel="noopener">Abrir a matriz oficial em PDF</a>
-    </div>
-
-    <h2>1º período · o que você cursa em 2027/1</h2>
-    <div class="card"><table><thead><tr><th>Código</th><th>Disciplina</th><th class="num">Horas</th></tr></thead><tbody id="tb-disc"></tbody></table></div>
-    <p class="tagline" style="margin-top:14px">São cinco componentes de 80 h, 400 h no total. As disciplinas dos períodos seguintes estão na matriz oficial em PDF, e vão aparecer aqui conforme a faculdade publicar.</p>
-
-    <h2>Como ler a matriz</h2>
-    <div class="card">
-      <ol class="steps">
-        <li><b>Componente é a disciplina</b>Cada linha da matriz é um componente com código e carga horária própria.</li>
-        <li><b>Período é o semestre</b>São dez períodos no curso, do 1º ao 10º, e a clínica entra na grade conforme a matriz define.</li>
-        <li><b>Pré-requisito trava matrícula</b>Alguns componentes exigem outro antes. Confira na matriz antes de montar a matrícula do semestre.</li>
-        <li><b>Carga horária não é hora de relógio</b>As 4.320 h incluem aulas, laboratório, clínica e atividades complementares, conforme a matriz.</li>
-      </ol>
-    </div>
-  </section>
-
-  <section class="tab" id="t-clinica">
-    <h2>Laboratório e clínica</h2>
-    <div id="clinica-pastas"></div>
-
-    <h2>Antes de entrar na clínica</h2>
-    <div class="card" id="kit"></div>
-    <p class="tagline" style="margin-top:12px">Checklist pessoal, que fica salvo neste aparelho. Ajuste conforme o protocolo da sua clínica e o que o professor pedir.</p>
-
-    <h2>Certificados e horas complementares</h2>
-    <div id="cert-pastas"></div>
-
-    <h2>Estágio e carreira</h2>
-    <div id="estagio-pastas"></div>
-
-    <h2>Biblioteca de odontologia</h2>
-    <div id="bib-pastas"></div>
+  <section class="tab" id="t-disc">
+    <h2>Disciplinas do 1º período</h2>
+    <div class="panel"><table><thead><tr><th>Código</th><th>Disciplina</th><th class="num">Horas</th></tr></thead><tbody id="tb-disc"></tbody></table></div>
+    <p class="tagline">Matriz oficial consultada no Portal do Aluno em 13/11/2026. Sem notas lançadas até essa data.</p>
   </section>
 
   <section class="tab" id="t-arq">
-    <h2>Todas as pastas do Drive</h2>
-    <p class="tagline" style="margin-bottom:16px">Toque para abrir os arquivos. Os links levam ao seu Google Drive, então só você vê.</p>
+    <h2>Pastas no seu Drive</h2>
+    <p class="tagline" style="margin-top:-4px;margin-bottom:12px">Toque em uma pasta para ver os arquivos. Os links abrem no seu Google Drive, então só você vê.</p>
     <div id="pastas"></div>
+  </section>
+
+  <section class="tab" id="t-fin">
+    <h2>Financeiro acadêmico</h2>
+    <div class="panel"><table><thead><tr><th>Descrição</th><th class="num">Valor</th><th class="num">Vencimento</th></tr></thead><tbody id="tb-fin"></tbody></table>
+      <div class="tagline">Valores conferidos no boleto guardado na pasta 10 — Financeiro Acadêmico.</div>
+    </div>
   </section>
 
   <section class="tab" id="t-ag">
     <h2>Agenda</h2>
-    <div class="card" id="agenda-box"></div>
+    <div class="panel" id="agenda-box"></div>
     <h2>Onde você agenda</h2>
-    <div class="card">
-      <p class="tagline" style="margin-bottom:16px">A agenda vive no seu Google Calendar, e este painel lê de lá. O que você marcar aparece aqui sozinho.</p>
-      <a class="btn" href="https://calendar.google.com/calendar/u/0/r/eventedit" target="_blank" rel="noopener">Criar compromisso</a>
+    <div class="panel">
+      <p class="tagline" style="margin-top:0;margin-bottom:14px">A agenda vive no seu Google Calendar, e este painel lê de lá. É por isso que o que você marcar aparece aqui sozinho.</p>
+      <a class="btn" href="https://calendar.google.com/calendar/u/0/r/eventedit" target="_blank" rel="noopener">Criar compromisso no Google Calendar</a>
       <a class="btn ghost" style="margin-top:9px" href="https://calendar.google.com/calendar/u/0/r" target="_blank" rel="noopener">Abrir minha agenda</a>
     </div>
-    <h2>Como marcar na rotina de odontologia</h2>
-    <div class="card">
+    <h2>Como marcar cada tipo</h2>
+    <div class="panel">
       <ol class="steps">
-        <li><b>Aula prática e laboratório</b>Nome da disciplina no título, sala no local e o roteiro do procedimento na descrição.</li>
-        <li><b>Clínica com paciente</b>Evento com o nome do paciente na descrição, nunca no título, e um lembrete na véspera para confirmar.</li>
-        <li><b>Prova teórica e prática</b>Lembretes de 3 dias e de 1 dia antes, com o conteúdo da revisão na descrição.</li>
-        <li><b>Estágio e plantão</b>Um evento por turno, com o supervisor na descrição, para contar horas no fim do semestre.</li>
-        <li><b>Boleto e matrícula</b>Evento de dia inteiro, com lembretes de 5 dias e de 1 dia.</li>
+        <li><b>Prova e trabalho</b>No Calendar, crie o evento com o nome da disciplina, e coloque um lembrete de 3 dias e outro de 1 dia antes.</li>
+        <li><b>Clínica e laboratório</b>Use o local do evento para o endereço da clínica e anexe o roteiro do procedimento na descrição.</li>
+        <li><b>Estágio e plantão</b>Crie um evento por turno, com o nome do supervisor na descrição, para contar horas no fim do semestre.</li>
+        <li><b>Consulta e dentista</b>Marque como evento separado e coloque o telefone da clínica na descrição.</li>
+        <li><b>Prazo de boleto</b>Coloque como evento de dia inteiro com dois lembretes, um de 5 dias e outro de 1 dia.</li>
       </ol>
+      <p class="tagline">Se preferir, me diga o compromisso pelo WhatsApp que eu crio no seu Google Calendar.</p>
     </div>
   </section>
 
   <div class="foot">
     <div id="atualizado">—</div>
-    <div style="margin-top:6px">Dados do Portal do Aluno, do Google Drive e do Google Calendar.</div>
-    <button class="btn ghost" style="margin-top:16px" id="recarregar">Recarregar dados</button>
+    <div style="margin-top:6px">Dados do Portal do Aluno, do Google Drive e do Google Calendar. Nada é atualizado sozinho no portal: a leitura acontece quando você pede.</div>
+    <button class="btn ghost" style="margin-top:12px" id="recarregar">Recarregar dados do painel</button>
   </div>
 </div>
-</div>
+
+<nav class="tabs">
+  <button data-tab="painel" class="on"><svg viewBox="0 0 24 24"><path d="M3 13h8V3H3zM13 21h8V11h-8zM3 21h8v-6H3zM13 9h8V3h-8z"/></svg>Painel</button>
+  <button data-tab="disc"><svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h7M8 11h7"/></svg>Disciplinas</button>
+  <button data-tab="arq"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Arquivos</button>
+  <button data-tab="fin"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Financeiro</button>
+  <button data-tab="ag"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>Agenda</button>
+</nav>
 
 <script>
-const $=s=>document.querySelector(s);
-const esc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const $=s=>document.querySelector(s), esc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const nf=n=>new Intl.NumberFormat('pt-BR').format(n);
-const money=n=>Number(n).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
-const dataBR=iso=>{const p=String(iso).split('-');return p.length===3?`${p[2]}/${p[1]}/${p[0]}`:iso};
+const money=n=>n.toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
+const dataBR=iso=>{const [a,m,d]=iso.split('-');return `${d}/${m}/${a}`};
 
-$('#nav').addEventListener('click',e=>{
-  const b=e.target.closest('button[data-tab]'); if(!b) return;
-  document.querySelectorAll('#nav button').forEach(x=>x.classList.toggle('on',x===b));
+
+const RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function conta(el){
+  const alvo=parseFloat(el.dataset.n); if(!isFinite(alvo)) return;
+  const txt=[...el.childNodes].find(n=>n.nodeType===3); if(!txt) return;
+  if(RM){return}
+  const sufixo=txt.textContent.replace(/[\d.,]/g,'');
+  const t0=performance.now(), dur=900;
+  const passo=t=>{const p=Math.min(1,(t-t0)/dur), e=1-Math.pow(1-p,3);
+    txt.textContent=nf(Math.round(alvo*e))+sufixo;
+    if(p<1) requestAnimationFrame(passo);};
+  requestAnimationFrame(passo);
+}
+function cresce(){
+  document.querySelectorAll('.bar2[data-h]').forEach((b,i)=>{
+    const h=b.dataset.h; b.style.height='0';
+    setTimeout(()=>{b.style.height=h+'%'}, RM?0:60+i*70);
+  });
+}
+
+document.querySelectorAll('nav.tabs button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('nav.tabs button').forEach(x=>x.classList.toggle('on',x===b));
   document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.id==='t-'+b.dataset.tab));
   window.scrollTo({top:0,behavior:'smooth'});
 });
 
-const KIT=['Jaleco de manga longa, limpo','Luvas, máscara, gorro e óculos de proteção','Instrumental esterilizado e identificado','Ficha de anamnese do paciente preenchida','Radiografias e exames anexados ao caso','Termo de consentimento assinado','Gaze, álcool 70 e descarpack na bancada','Horário do paciente confirmado na véspera'];
-
-function pastasDe(prefixo,D){
-  const p=(D.pastasDrive||[]).find(x=>x.nome.slice(0,2)===prefixo);
-  if(!p) return '<p class="tagline">Pasta não encontrada no Drive.</p>';
-  const subs=(p.subpastas||[]).map(s=>`<a href="${s.link||'#'}" target="_blank" rel="noopener">${esc(s.nome)}<span>${s.arquivos.length} arquivo(s)</span></a>`).join('');
-  const files=(p.arquivos||[]).map(f=>`<a href="${f.link||'#'}" target="_blank" rel="noopener">${esc(f.nome)}<span>${f.mod||''}</span></a>`).join('');
-  return `<details open><summary><span>${esc(p.nome)}</span><span class="cnt">${(p.arquivos||[]).length+(p.subpastas||[]).reduce((a,s)=>a+s.arquivos.length,0)} arq.</span></summary><div class="files">${subs}${files}</div></details>`;
-}
-
 function charts(D){
-  const ds=D.disciplinas||[], maxD=Math.max(1,...ds.map(d=>d.horas));
-  $('#chart-disc').innerHTML=ds.map(d=>`<div class="col"><div class="num">${d.horas}</div>
-    <div class="bar2" style="height:${Math.round(d.horas/maxD*82)}%"></div>
-    <div class="cap">${esc(d.nome.split(/[\/ ]/)[0].slice(0,10))}</div></div>`).join('');
-  const areas=[...(D.areas||[])].sort((a,b)=>b.arquivos-a.arquivos);
+  const maxD=Math.max(...D.disciplinas.map(d=>d.horas));
+  $('#chart-disc').innerHTML=D.disciplinas.map(d=>`
+    <div class="col"><div class="num">${d.horas}h</div>
+      <div class="bar2" data-h="${Math.round(d.horas/maxD*86)}" style="height:0"></div>
+      <div class="cap">${esc(d.nome.split(/[\/ ]/)[0])}</div></div>`).join('');
+  const areas=[...D.areas].sort((a,b)=>b.arquivos-a.arquivos);
   const maxA=Math.max(1,...areas.map(a=>a.arquivos));
-  $('#chart-areas').innerHTML=areas.map(a=>`<div class="col"><div class="num">${a.arquivos}</div>
-    <div class="bar2" style="height:${Math.max(3,Math.round(a.arquivos/maxA*76))}%"></div>
-    <div class="cap">${esc(a.nome.slice(0,2))}</div></div>`).join('');
-  $('#areas-note').textContent=`${nf(D.totalArquivos)} arquivos em ${nf(D.totalPastas)} pastas. Os números 00 a 11 são as áreas da sua pasta no Drive.`;
+  $('#chart-areas').innerHTML=areas.map(a=>`
+    <div class="col"><div class="num">${a.arquivos}</div>
+      <div class="bar2" data-h="${Math.max(3,Math.round(a.arquivos/maxA*80))}" style="height:0"></div>
+      <div class="cap">${esc(a.nome.slice(0,2))}</div></div>`).join('');
+  requestAnimationFrame(cresce);
+  $('#areas-note').textContent=`${nf(D.totalArquivos)} arquivos em ${D.totalPastas} pastas. Os números 00 a 11 são as áreas da sua pasta no Drive.`;
 }
 
 function render(D){
-  const C=D.carga||{}, cumpr=C.horasCumpridas||0, prev=C.horasPrevistasPeriodo||C.horasPeriodo||0;
-  const pct=Math.round(cumpr/C.horasTotal*100);
-  $('#eyebrow').textContent=`${D.curso.instituicao} · ${D.curso.curso} · ${D.curso.semestre}`;
-  $('#lede').textContent=`${D.curso.matriz}, turno ${D.curso.turno.toLowerCase()}, RA ${D.curso.ra}. O curso começa em ${C.inicio||'2027/1'}: o que existe hoje é a carga prevista, não horas cumpridas.`;
-  $('#stats').innerHTML=[
-    ['Previsto no 1º período',`${nf(prev)}<small>h</small>`,'5 componentes de 80 h'],
-    ['Horas cumpridas',`${nf(cumpr)}<small>h</small>`,`de ${nf(C.horasTotal)} h no curso`],
-    ['Clínica e laboratório',nf(((D.pastasDrive||[]).find(p=>p.nome.slice(0,2)==='06')||{}).subpastas?.length||0),'pastas de prática'],
-    ['Na agenda',nf((D.agenda||[]).length),'próximos 90 dias']
-  ].map(([k,v,n])=>`<div class="stat"><div class="k">${k}</div><div class="v">${v}</div><div class="n">${n}</div></div>`).join('');
+  $('#kick').textContent=`${D.curso.instituicao} · ${D.curso.curso} · ${D.curso.semestre}`;
+  $('#sub').textContent=`${D.curso.matriz} · ${D.curso.turno} · RA ${D.curso.ra}`;
+  const cumpr=D.carga.horasCumpridas||0, prev=D.carga.horasPrevistasPeriodo||D.carga.horasPeriodo||0;
+  const pct=Math.round(cumpr/D.carga.horasTotal*100);
+  $('#cards').innerHTML=[
+    ['Previsto no 1º período',`${nf(prev)}<small>h</small>`,'5 disciplinas de 80 h'],
+    ['Horas cumpridas',`${nf(cumpr)}<small>h</small>`,`de ${nf(D.carga.horasTotal)} h no curso`],
+    ['Arquivos no Drive',nf(D.totalArquivos),`${D.totalPastas} pastas`],
+    ['Agenda',D.agenda.length?nf(D.agenda.length):'0','próximos 90 dias',D.agenda.length],
+  ].map(([l,v,n,num])=>`<div class="card"><div class="lbl">${l}</div><div class="val" data-n="${num}">${v}</div><div class="note">${n}</div></div>`).join('');
+  requestAnimationFrame(()=>document.querySelectorAll('.val').forEach(conta));
 
-  $('#p-h').textContent=`${nf(cumpr)} de ${nf(C.horasTotal)} h`;
-  $('#p-bar').style.width=pct+'%';
-  $('#p-note').textContent=cumpr?`${pct}% da carga total. Faltam ${nf(C.horasTotal-cumpr)} h.`
-    :`Nenhuma hora cumprida ainda. As ${nf(prev)} h são a carga prevista do 1º período.`;
-  $('#p-comp').textContent=`${C.componentes} em ${C.periodos} períodos`;
+  $('#p-h').textContent=`${nf(cumpr)} de ${nf(D.carga.horasTotal)} h`;
+  const pb=$('#p-bar');pb.style.width='0%';requestAnimationFrame(()=>requestAnimationFrame(()=>pb.style.width=pct+'%'));
+  $('#p-note').textContent=cumpr?`${pct}% da carga horária total. Faltam ${nf(D.carga.horasTotal-cumpr)} h.`:`O curso começa em ${D.carga.inicio||'2027/1'}: nenhuma hora cumprida ainda. Os ${nf(prev)} h são a carga prevista do 1º período, não horas feitas.`;
+  $('#p-comp').textContent=`${D.carga.componentes} em ${D.carga.periodos} períodos`;
   $('#p-sem').textContent=D.curso.semestre;
   $('#p-sit').textContent=D.curso.situacao;
 
-  const total=C.periodos||10;
-  $('#periodos').innerHTML=Array.from({length:total},(_,i)=>{
-    const n=i+1, atual=n===1;
-    return `<div class="${atual?'now':''}"><b>${n}º</b><span>${atual?'atual':'previsto'}</span></div>`;
-  }).join('');
-  $('#per-note').textContent=`Você está no 1º de ${total} períodos. Nenhum concluído até agora.`;
-
   const P=D.portal||{};
-  $('#po-etapa').textContent=P.etapa||D.curso.semestre;
-  $('#po-notas').textContent=P.notas||'—';
-  $('#po-faltas').textContent=P.faltas||'—';
-  $('#po-cal').textContent=P.calendario||'—';
-  $('#po-lido').textContent=P.lidoEm?('Lido no portal em '+P.lidoEm):'Ainda não lido no portal.';
+  if($('#po-etapa')){
+    $('#po-etapa').textContent=P.etapa||D.curso.semestre;
+    $('#po-notas').textContent=P.notas||'—';
+    $('#po-faltas').textContent=P.faltas||'—';
+    $('#po-cal').textContent=P.calendario||'—';
+    $('#po-lido').textContent=P.lidoEm?('Lido no portal em '+P.lidoEm):'Ainda não lido no portal.';
+  }
+  $('#tb-disc').innerHTML=D.disciplinas.map(d=>`<tr><td class="mut">${d.codigo}</td><td>${esc(d.nome)}</td><td class="num">${d.horas} h</td></tr>`).join('')
+    +`<tr><td></td><td><b>Total previsto</b></td><td class="num"><b>${nf(prev)} h</b></td></tr>`;
 
-  $('#m-grade').textContent=D.curso.matriz;
-  $('#m-total').textContent=`${nf(C.horasTotal)} h`;
-  $('#m-comp').textContent=C.componentes;
-  $('#m-turno').textContent=D.curso.turno;
-  $('#m-ing').textContent=D.curso.ingresso;
+  $('#tb-fin').innerHTML=D.financeiro.map(f=>`<tr><td>${esc(f.descricao)}</td><td class="num">${money(f.valor)}</td><td class="num">${dataBR(f.vencimento)}</td></tr>`).join('')
+    || '<tr><td colspan="3" class="mut">Nada lançado.</td></tr>';
 
-  $('#tb-disc').innerHTML=(D.disciplinas||[]).map(d=>`<tr><td class="cod">${d.codigo}</td><td>${esc(d.nome)}</td><td class="num">${d.horas} h</td></tr>`).join('')
-    +`<tr><td></td><td><b>Total previsto</b></td><td class="num">${nf(prev)} h</td></tr>`;
-
-  $('#tb-fin').innerHTML=(D.financeiro||[]).map(f=>`<tr><td>${esc(f.descricao)}</td><td class="num">${money(f.valor)}</td><td class="num">${dataBR(f.vencimento)}</td></tr>`).join('')
-    ||'<tr><td colspan="3" class="tagline">Nada lançado.</td></tr>';
-
-  $('#clinica-pastas').innerHTML=pastasDe('06',D);
-  $('#cert-pastas').innerHTML=pastasDe('07',D);
-  $('#estagio-pastas').innerHTML=pastasDe('08',D);
-  $('#bib-pastas').innerHTML=pastasDe('05',D);
-
-  $('#kit').innerHTML=KIT.map((t,i)=>`<label class="check"><input type="checkbox" data-k="${i}"><span>${esc(t)}</span></label>`).join('');
-
-  $('#pastas').innerHTML=(D.pastasDrive||[]).map(p=>{
+  $('#pastas').innerHTML=D.pastasDrive.map(p=>{
     const subs=(p.subpastas||[]).map(s=>`<a href="${s.link||'#'}" target="_blank" rel="noopener">${esc(s.nome)}<span>${s.arquivos.length} arquivo(s)</span></a>`).join('');
     const files=(p.arquivos||[]).map(f=>`<a href="${f.link||'#'}" target="_blank" rel="noopener">${esc(f.nome)}<span>${f.mod||''}</span></a>`).join('');
     const n=(p.arquivos||[]).length+(p.subpastas||[]).reduce((a,s)=>a+s.arquivos.length,0);
-    return `<details><summary><span>${esc(p.nome)}</span><span class="cnt">${n} arq.</span></summary>
-      <div class="files">${subs}${files}${n?'':'<p class="tagline" style="padding-top:10px">Pasta vazia por enquanto.</p>'}</div></details>`;
+    return `<details><summary>${esc(p.nome)}<span class="cnt">${n} arq.</span></summary><div class="files">${subs}${files}${n?'':'<div class="tagline">Pasta vazia por enquanto.</div>'}</div></details>`;
   }).join('');
 
-  const ag=D.agenda||[];
-  if(ag.length){
-    $('#agenda-box').innerHTML=ag.map(e=>{
+  if(D.agenda.length){
+    $('#agenda-box').innerHTML=D.agenda.map(e=>{
       const d=new Date(e.inicio);
       const dia=d.toLocaleDateString('pt-BR',{day:'2-digit',month:'short'});
-      const hora=String(e.inicio).includes('T')?d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}):'dia inteiro';
+      const hora=e.inicio.includes('T')?d.toLocaleTimeString('pt-BR',{hour:'2-digit',minute:'2-digit'}):'dia inteiro';
       return `<div class="row"><span>${esc(e.titulo)}${e.local?`<span class="mut"><br>${esc(e.local)}</span>`:''}</span><b>${dia}<br><span class="mut">${hora}</span></b></div>`;
     }).join('');
   } else {
-    $('#agenda-box').innerHTML=`<div class="empty"><div class="big">Nada marcado nos próximos 90 dias</div>
-      <p>Assim que você criar um evento no Google Calendar, ele aparece aqui. Ainda não há aula prática, prova ou boleto na agenda.</p>
+    $('#agenda-box').innerHTML=`<div class="empty"><div class="big">Nenhum compromisso nos próximos 90 dias</div>
+      <p>Assim que você criar um evento no Google Calendar, ele aparece aqui. Ainda não há prova, estágio ou boleto marcado.</p>
       <a class="btn" href="https://calendar.google.com/calendar/u/0/r/eventedit" target="_blank" rel="noopener">Criar o primeiro compromisso</a></div>`;
   }
 
   $('#atualizado').textContent='Atualizado em '+D.atualizadoEm;
   charts(D);
-  ligarKit();
-}
-
-function ligarKit(){
-  const chaves=[...document.querySelectorAll('#kit input')];
-  chaves.forEach(c=>{
-    if(localStorage.getItem('kit-'+c.dataset.k)==='1') c.checked=true;
-    c.addEventListener('change',()=>localStorage.setItem('kit-'+c.dataset.k,c.checked?'1':'0'));
-  });
 }
 
 async function carregar(){
   try{
     const r=await fetch('data.json?v='+Date.now(),{cache:'no-store'});
     render(await r.json());
-  }catch(e){ $('#lede').textContent='Não consegui ler os dados. Toque em recarregar.'; }
+  }catch(e){
+    $('#sub').textContent='Não consegui ler os dados. Toque em recarregar.';
+  }
 }
 $('#recarregar').onclick=carregar;
 carregar();
-
-(function(){
-  const cv=document.getElementById('fx');
-  if(!cv||matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const ctx=cv.getContext('2d');
-  let w=0,h=0,dpr=1,parts=[],raf=null;
-  function size(){
-    dpr=Math.min(devicePixelRatio||1,2);
-    w=cv.clientWidth; h=cv.clientHeight;
-    cv.width=w*dpr; cv.height=h*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
-    const n=Math.min(220,Math.max(70,Math.round(w*h/9000)));
-    parts=Array.from({length:n},()=>({x:Math.random()*w,y:Math.random()*h,a:Math.random()*Math.PI*2,s:.35+Math.random()*.7,l:10+Math.random()*26}));
-  }
-  function field(x,y,t){ return Math.sin((x*.0045)+(y*.0031)+t*.00016)*1.7 + Math.cos((x*.0021)-(y*.0057)-t*.00011)*1.2; }
-  function draw(t){
-    ctx.clearRect(0,0,w,h); ctx.lineWidth=.8;
-    for(const p of parts){
-      const ang=field(p.x,p.y,t)+p.a*.05;
-      const nx=p.x+Math.cos(ang)*p.s*2.2, ny=p.y+Math.sin(ang)*p.s*2.2;
-      ctx.strokeStyle='rgba(18,58,107,'+(0.06+Math.min(.14,p.l/220))+')';
-      ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(nx,ny); ctx.stroke();
-      p.x=nx; p.y=ny;
-      if(p.x<-20||p.x>w+20||p.y<-20||p.y>h+20){ p.x=Math.random()*w; p.y=Math.random()*h; }
-    }
-    raf=requestAnimationFrame(draw);
-  }
-  size(); raf=requestAnimationFrame(draw);
-  addEventListener('resize',()=>{size();},{passive:true});
-  document.addEventListener('visibilitychange',()=>{
-    if(document.hidden){ cancelAnimationFrame(raf); raf=null; }
-    else if(!raf){ raf=requestAnimationFrame(draw); }
-  });
-})();
-
-if('serviceWorker' in navigator){
-  addEventListener('load',()=>navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(r=>r.update()).catch(()=>{}));
-  let recarregou=false;
-  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(!recarregou){recarregou=true;location.reload();}});
-}
+if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}
 </script>
 </body>
 </html>
