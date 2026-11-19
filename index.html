@@ -159,6 +159,20 @@ nav.tabs button:active{transform:scale(.96)}
     <div class="panel"><table><thead><tr><th>Descrição</th><th class="num">Valor</th><th class="num">Vencimento</th></tr></thead><tbody id="tb-fin"></tbody></table>
       <div class="tagline">Valores conferidos no boleto guardado na pasta 10 — Financeiro Acadêmico.</div>
     </div>
+
+    <h2>Enviar comprovante</h2>
+    <div class="panel">
+      <p class="tagline" style="margin-top:0;margin-bottom:14px">O envio é feito na pasta do Drive, que é onde os arquivos ficam guardados. Toque no botão, arraste o comprovante e pronto: o painel mostra o arquivo na próxima atualização.</p>
+      <a class="btn" id="btn-enviar" href="#" target="_blank" rel="noopener">Abrir a pasta de comprovantes</a>
+      <a class="btn ghost" style="margin-top:9px" id="btn-financeiro" href="#" target="_blank" rel="noopener">Ver a pasta financeira inteira</a>
+      <p class="tagline" style="margin-top:14px">Sem paciência para o Drive? Me mande o comprovante aqui no WhatsApp que eu salvo na pasta certa.</p>
+    </div>
+
+    <h2>Comprovantes guardados</h2>
+    <div class="panel" id="comprovantes"></div>
+
+    <h2>Mensalidades</h2>
+    <div class="panel" id="mensalidades"></div>
   </section>
 
   <section class="tab" id="t-ag">
@@ -276,6 +290,18 @@ function render(D){
   }
   $('#tb-disc').innerHTML=D.disciplinas.map(d=>`<tr><td class="mut">${d.codigo}</td><td>${esc(d.nome)}</td><td class="num">${d.horas} h</td></tr>`).join('')
     +`<tr><td></td><td><b>Total previsto</b></td><td class="num"><b>${nf(prev)} h</b></td></tr>`;
+
+  const FP=D.financeiroPastas||{};
+  const linkDe=(o)=>o&&o.link?o.link:'#';
+  if($('#btn-enviar')) $('#btn-enviar').href=linkDe(FP.comprovantes);
+  if($('#btn-financeiro')) $('#btn-financeiro').href=linkDe(FP.pastaPrincipal);
+  const listaArquivos=(o,vazio)=>{
+    const arqs=(o&&o.arquivos)||[];
+    if(!arqs.length) return `<div class="tagline">${vazio}</div>`;
+    return arqs.map(a=>`<div class="row"><span>${esc(a.nome)}<span class="mut"><br>${esc(a.mod||'')}</span></span><b><a href="${a.link||'#'}" target="_blank" rel="noopener" style="color:inherit">abrir</a></b></div>`).join('');
+  };
+  if($('#comprovantes')) $('#comprovantes').innerHTML=listaArquivos(FP.comprovantes,'Nenhum comprovante na pasta ainda. Use o botão acima para enviar o primeiro.');
+  if($('#mensalidades')) $('#mensalidades').innerHTML=listaArquivos(FP.mensalidades,'Nenhuma mensalidade guardada ainda.');
 
   $('#tb-fin').innerHTML=D.financeiro.map(f=>`<tr><td>${esc(f.descricao)}</td><td class="num">${money(f.valor)}</td><td class="num">${dataBR(f.vencimento)}</td></tr>`).join('')
     || '<tr><td colspan="3" class="mut">Nada lançado.</td></tr>';
