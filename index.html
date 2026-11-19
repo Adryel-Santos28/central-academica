@@ -251,7 +251,11 @@ async function carregar(){
 }
 $('#recarregar').onclick=carregar;
 carregar();
-if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}
+if('serviceWorker' in navigator){
+  addEventListener('load',()=>navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(r=>r.update()).catch(()=>{}));
+  let recarregou=false;
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(!recarregou){recarregou=true;location.reload();}});
+}
 </script>
 </body>
 </html>
