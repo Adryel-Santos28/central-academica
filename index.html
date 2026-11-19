@@ -175,6 +175,15 @@ nav.tabs button:active{transform:scale(.96)}
     <div class="panel" id="mensalidades"></div>
   </section>
 
+  <section class="tab" id="t-comp">
+    <h2>Onde subir cada comprovante</h2>
+    <p class="tagline" style="margin-top:-4px;margin-bottom:14px">Cada botão abre a pasta certa no seu Drive. Depois de subir, o arquivo aparece aqui na próxima atualização.</p>
+    <div id="lista-comprovantes"></div>
+    <div class="panel" style="margin-top:14px">
+      <p class="tagline" style="margin-top:0">Sem paciência para o Drive? Me mande o arquivo aqui no WhatsApp que eu salvo na pasta certa e o painel mostra na hora.</p>
+    </div>
+  </section>
+
   <section class="tab" id="t-ag">
     <h2>Agenda</h2>
     <div class="panel" id="agenda-box"></div>
@@ -209,6 +218,7 @@ nav.tabs button:active{transform:scale(.96)}
   <button data-tab="disc"><svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h13v18H6a2 2 0 0 1-2-2z"/><path d="M8 7h7M8 11h7"/></svg>Disciplinas</button>
   <button data-tab="arq"><svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>Arquivos</button>
   <button data-tab="fin"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Financeiro</button>
+  <button data-tab="comp"><svg viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5"/><path d="M5 15v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3"/></svg>Comprovantes</button>
   <button data-tab="ag"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>Agenda</button>
 </nav>
 
@@ -290,6 +300,20 @@ function render(D){
   }
   $('#tb-disc').innerHTML=D.disciplinas.map(d=>`<tr><td class="mut">${d.codigo}</td><td>${esc(d.nome)}</td><td class="num">${d.horas} h</td></tr>`).join('')
     +`<tr><td></td><td><b>Total previsto</b></td><td class="num"><b>${nf(prev)} h</b></td></tr>`;
+
+  if($('#lista-comprovantes')){
+    const cats=D.comprovantesCategorias||[];
+    $('#lista-comprovantes').innerHTML=cats.map((c,i)=>{
+      const n=(c.arquivos||[]).length;
+      const lista=n?c.arquivos.map(a=>`<div class="row"><span>${esc(a.nome)}<span class="mut"><br>${esc(a.mod||'')}</span></span><b><a href="${a.link||'#'}" target="_blank" rel="noopener" style="color:inherit">abrir</a></b></div>`).join(''):'';
+      return `<div class="panel" style="margin-bottom:10px">
+        <div class="row" style="border-bottom:0;padding-top:0"><span><b style="font-size:14.5px">${esc(c.titulo)}</b><span class="mut"><br>${esc(c.oque)}</span></span><b>${n? n+' arq.':'vazio'}</b></div>
+        <a class="btn" style="margin-top:6px" href="${c.link||'#'}" target="_blank" rel="noopener">Subir comprovante</a>
+        <div class="tagline" style="margin-top:9px">Pasta: ${esc(c.pasta||'')}</div>
+        ${lista?`<div style="margin-top:8px">${lista}</div>`:''}
+      </div>`;
+    }).join('');
+  }
 
   const FP=D.financeiroPastas||{};
   const linkDe=(o)=>o&&o.link?o.link:'#';
