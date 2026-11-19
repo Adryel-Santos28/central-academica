@@ -1327,13 +1327,17 @@
    "vencimento": null,
    "pagoEm": "2026-10-26",
    "status": "pago",
-   "obs": "Pago adiantado em 26/10/2026, com 30% de desconto.",
+   "obs": "Pago adiantado em 26/10/2026, com desconto por antecipação. A mensalidade cheia é R$ 1.696,00 e com os 30% fica R$ 1.187,20.",
    "pasta": "02 — COMPROVANTES DE PAGAMENTO",
-   "valorCheio": 1140.0
+   "valorCheio": 1696.0
   }
  ],
  "mensalidade": {
-  "valorCheio": 1140.0,
-  "observacao": "Pagando antes do vencimento sai com desconto. Se atrasar, paga o valor cheio."
+  "valorCheio": 1696.0,
+  "valorComDesconto": 1187.2,
+  "descontoPct": 30,
+  "regra": "Pagar até o 5º dia útil de cada mês para ter os 30% de desconto. Depois disso, paga o valor cheio.",
+  "parcelasPorSemestre": 6,
+  "semestralidade": 10176.0
  }
 }
