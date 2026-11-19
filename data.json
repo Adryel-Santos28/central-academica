@@ -6,16 +6,18 @@
   "matriz": "Grade 2023 - Ciclo Branco (Not.)",
   "turno": "Noturno",
   "ingresso": "Vestibular",
-  "situacao": "Matriculado",
+  "situacao": "Matriculado · curso ainda não iniciado",
   "semestre": "2027/1",
   "ra": "544481"
  },
  "carga": {
   "periodoAtual": 1,
-  "horasPeriodo": 400,
+  "horasPrevistasPeriodo": 400,
+  "horasCumpridas": 0,
   "horasTotal": 4320,
   "componentes": 49,
-  "periodos": 10
+  "periodos": 10,
+  "inicio": "2027/1"
  },
  "disciplinas": [
   {
