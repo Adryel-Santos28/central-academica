@@ -1,5 +1,5 @@
 {
- "atualizadoEm": "19/11/2026 18:30",
+ "atualizadoEm": "19/11/2026 18:47",
  "curso": {
   "instituicao": "UNIFEB",
   "curso": "Odontologia",
@@ -644,7 +644,14 @@
      "nome": "03 — CONTRATO E COMPROVANTES",
      "id": "1rkRmaRhMNjMg6Ff958nju_Yxy_6LWmeg",
      "link": "https://drive.google.com/drive/folders/1rkRmaRhMNjMg6Ff958nju_Yxy_6LWmeg",
-     "arquivos": []
+     "arquivos": [
+      {
+       "nome": "Contrato UNIFEB 228519 — Odontologia 2027-1 — assinado 26-10-2026.pdf",
+       "link": "https://drive.google.com/file/d/1BWD28WhpguNI-yoOKsYQR-kJW2TrNNcj/view?usp=drivesdk",
+       "mod": "2026-11-19",
+       "tipo": "application/pdf"
+      }
+     ]
     },
     {
      "nome": "04 — DECLARAÇÕES",
@@ -1316,7 +1323,14 @@
    "oque": "Contrato assinado, comprovante de matrícula e declaração da faculdade.",
    "link": "https://drive.google.com/drive/folders/1rkRmaRhMNjMg6Ff958nju_Yxy_6LWmeg",
    "pasta": "03 — CONTRATO E COMPROVANTES",
-   "arquivos": []
+   "arquivos": [
+    {
+     "nome": "Contrato UNIFEB 228519 — Odontologia 2027-1 — assinado 26-10-2026.pdf",
+     "link": "https://drive.google.com/file/d/1BWD28WhpguNI-yoOKsYQR-kJW2TrNNcj/view?usp=drivesdk",
+     "mod": "2026-11-19",
+     "tipo": "application/pdf"
+    }
+   ]
   },
   {
    "chave": "conclusao",
@@ -1335,15 +1349,39 @@
  ],
  "pagamentos": [
   {
-   "descricao": "Mensalidade de janeiro de 2027 — paga adiantada",
-   "valor": 1102.4,
-   "vencimento": "2026-11-26",
-   "pagoEm": "2026-10-26",
-   "status": "pago",
-   "obs": "Recibo UNIFEB de R$ 1.102,40, vencimento original 26/11/2026, pago em 26/10/2026 no crédito (Getnet). Comprovante guardado no Drive.",
-   "pasta": "02 — COMPROVANTES DE PAGAMENTO",
+   "descricao": "Mensalidade 2/6 — fevereiro de 2027",
+   "vencimento": "2027-02-10",
    "valorCheio": 1696.0,
-   "comprovante": true
+   "valorComDesconto": 1187.2,
+   "status": "a vencer"
+  },
+  {
+   "descricao": "Mensalidade 3/6 — março de 2027",
+   "vencimento": "2027-03-10",
+   "valorCheio": 1696.0,
+   "valorComDesconto": 1187.2,
+   "status": "a vencer"
+  },
+  {
+   "descricao": "Mensalidade 4/6 — abril de 2027",
+   "vencimento": "2027-04-10",
+   "valorCheio": 1696.0,
+   "valorComDesconto": 1187.2,
+   "status": "a vencer"
+  },
+  {
+   "descricao": "Mensalidade 5/6 — maio de 2027",
+   "vencimento": "2027-05-10",
+   "valorCheio": 1696.0,
+   "valorComDesconto": 1187.2,
+   "status": "a vencer"
+  },
+  {
+   "descricao": "Mensalidade 6/6 — junho de 2027",
+   "vencimento": "2027-06-10",
+   "valorCheio": 1696.0,
+   "valorComDesconto": 1187.2,
+   "status": "a vencer"
   }
  ],
  "mensalidade": {
@@ -1353,5 +1391,88 @@
   "regra": "Pagar até o 5º dia útil de cada mês para ter os 30% de desconto. Depois disso, paga o valor cheio.",
   "parcelasPorSemestre": 6,
   "semestralidade": 10176.0
- }
+ },
+ "parcelas": [
+  {
+   "descricao": "Mensalidade 1/6 — janeiro de 2027",
+   "vencimento": "2027-01-10",
+   "valorCheio": 1696.0,
+   "valorComDesconto": 1187.2,
+   "status": "pago",
+   "pagoEm": "2026-10-26",
+   "valorPago": 1102.4,
+   "comprovante": true,
+   "obs": "Pago adiantado em 26/10/2026 no crédito (Getnet). Recibo guardado no Drive."
+  },
+  {
+   "descricao": "Mensalidade 2/6 — fevereiro de 2027",
+   "vencimento": "2027-02-10",
+   "valorCheio": 1696.0,
+   "valorComDesconto": 1187.2,
+   "status": "a vencer"
+  },
+  {
+   "descricao": "Mensalidade 3/6 — março de 2027",
+   "vencimento": "2027-03-10",
+   "valorCheio": 1696.0,
+   "valorComDesconto": 1187.2,
+   "status": "a vencer"
+  },
+  {
+   "descricao": "Mensalidade 4/6 — abril de 2027",
+   "vencimento": "2027-04-10",
+   "valorCheio": 1696.0,
+   "valorComDesconto": 1187.2,
+   "status": "a vencer"
+  },
+  {
+   "descricao": "Mensalidade 5/6 — maio de 2027",
+   "vencimento": "2027-05-10",
+   "valorCheio": 1696.0,
+   "valorComDesconto": 1187.2,
+   "status": "a vencer"
+  },
+  {
+   "descricao": "Mensalidade 6/6 — junho de 2027",
+   "vencimento": "2027-06-10",
+   "valorCheio": 1696.0,
+   "valorComDesconto": 1187.2,
+   "status": "a vencer"
+  }
+ ],
+ "contrato": {
+  "numero": "228519",
+  "curso": "Odontologia",
+  "semestre": "2027/1",
+  "semestralidade": 10176.0,
+  "parcelas": 6,
+  "valorParcela": 1696.0,
+  "assinadoEm": "2026-10-26",
+  "link": "https://drive.google.com/file/d/1BWD28WhpguNI-yoOKsYQR-kJW2TrNNcj/view?usp=drivesdk",
+  "pendencias": [
+   {
+    "item": "Histórico do ensino médio",
+    "prazo": "2026-11-05",
+    "status": "em aberto"
+   },
+   {
+    "item": "Reservista definitivo",
+    "prazo": "2026-11-05",
+    "status": "em aberto"
+   }
+  ]
+ },
+ "pagamentosPagos": [
+  {
+   "descricao": "Mensalidade 1/6 — janeiro de 2027",
+   "vencimento": "2027-01-10",
+   "valorCheio": 1696.0,
+   "valorComDesconto": 1187.2,
+   "status": "pago",
+   "pagoEm": "2026-10-26",
+   "valorPago": 1102.4,
+   "comprovante": true,
+   "obs": "Pago adiantado em 26/10/2026 no crédito (Getnet). Recibo guardado no Drive."
+  }
+ ]
 }
