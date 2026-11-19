@@ -1153,5 +1153,13 @@
     }
    ]
   }
- ]
+ ],
+ "portal": {
+  "etapa": "2027/1",
+  "lidoEm": "19/11/2026 01:04",
+  "notas": "Nenhuma nota lançada",
+  "faltas": "Nenhuma falta registrada",
+  "desempenho": "Sem dados para o gráfico",
+  "calendario": "Sem eventos de aula publicados"
+ }
 }
