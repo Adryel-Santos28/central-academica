@@ -1328,7 +1328,12 @@
    "pagoEm": "2026-10-26",
    "status": "pago",
    "obs": "Pago adiantado em 26/10/2026, com 30% de desconto.",
-   "pasta": "02 — COMPROVANTES DE PAGAMENTO"
+   "pasta": "02 — COMPROVANTES DE PAGAMENTO",
+   "valorCheio": 1140.0
   }
- ]
+ ],
+ "mensalidade": {
+  "valorCheio": 1140.0,
+  "observacao": "Pagando antes do vencimento sai com desconto. Se atrasar, paga o valor cheio."
+ }
 }
