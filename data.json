@@ -1,0 +1,1155 @@
+{
+ "atualizadoEm": "19/11/2026 00:46",
+ "curso": {
+  "instituicao": "UNIFEB",
+  "curso": "Odontologia",
+  "matriz": "Grade 2023 - Ciclo Branco (Not.)",
+  "turno": "Noturno",
+  "ingresso": "Vestibular",
+  "situacao": "Matriculado",
+  "semestre": "2027/1",
+  "ra": "544481"
+ },
+ "carga": {
+  "periodoAtual": 1,
+  "horasPeriodo": 400,
+  "horasTotal": 4320,
+  "componentes": 49,
+  "periodos": 10
+ },
+ "disciplinas": [
+  {
+   "codigo": "336515",
+   "nome": "Anatomia Humana",
+   "horas": 80
+  },
+  {
+   "codigo": "337430",
+   "nome": "Biologia Celular/Histologia e Embriologia",
+   "horas": 80
+  },
+  {
+   "codigo": "337435",
+   "nome": "Biologia Molecular e Genética",
+   "horas": 80
+  },
+  {
+   "codigo": "339420",
+   "nome": "Epidemiologia e Saúde Pública",
+   "horas": 80
+  },
+  {
+   "codigo": "339315",
+   "nome": "Microbiologia e Imunologia",
+   "horas": 80
+  }
+ ],
+ "areas": [
+  {
+   "nome": "00 — CENTRAL ACADÊMICA",
+   "arquivos": 10,
+   "subpastas": 8,
+   "link": "https://drive.google.com/drive/folders/1XlVO3ZAezJC59w5T07H2mXWr4Cf42CQH",
+   "pastas": [
+    {
+     "nome": "01 — PAINEL ACADÊMICO",
+     "arquivos": 2,
+     "link": "https://drive.google.com/drive/folders/1TquWpkkIFBEoXRsk0jMgbl2HZXHRxA3J"
+    },
+    {
+     "nome": "02 — CALENDÁRIO ACADÊMICO",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1WpilgMkg2a5eYg_wpNY69UIG2PCyXLRP"
+    },
+    {
+     "nome": "02 — CONTATOS E CANAIS OFICIAIS",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/17eTlinYJ3VkvUh_6oPJkMzUeZd1cONzC"
+    },
+    {
+     "nome": "03 — HORÁRIOS",
+     "arquivos": 1,
+     "link": "https://drive.google.com/drive/folders/1wojtGdIULzohF9MLjpiNQbJcmO5c3SuW"
+    },
+    {
+     "nome": "04 — CENTRAL DE ATIVIDADES",
+     "arquivos": 1,
+     "link": "https://drive.google.com/drive/folders/1ZcEnLMcJCHDypkbf-aO7fwwhI9dj1uKv"
+    },
+    {
+     "nome": "05 — CONTROLE DE PENDÊNCIAS",
+     "arquivos": 2,
+     "link": "https://drive.google.com/drive/folders/1PxkQOTnPOKIwLGgYiQOAIlzowe3RlABh"
+    },
+    {
+     "nome": "06 — RELATÓRIOS ACADÊMICOS",
+     "arquivos": 2,
+     "link": "https://drive.google.com/drive/folders/1a3rmIhQPC33eJvaVamzErtfQ3Xgpnglo"
+    },
+    {
+     "nome": "07 — AUTOMAÇÕES",
+     "arquivos": 2,
+     "link": "https://drive.google.com/drive/folders/1dOixqaYz5_aLzQtZNUzBpBPAqqyqS0Dq"
+    }
+   ]
+  },
+  {
+   "nome": "01 — MATRÍCULA E DOCUMENTOS",
+   "arquivos": 2,
+   "subpastas": 6,
+   "link": "https://drive.google.com/drive/folders/1e2zTcpcJrlPfytuCyUgE5JmCT9G2B_Ss",
+   "pastas": [
+    {
+     "nome": "01 — DOCUMENTOS PESSOAIS",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/11OnTlbos0IqGAcBX6xt5anVeVQB9Cm9a"
+    },
+    {
+     "nome": "02 — DOCUMENTOS DE MATRÍCULA",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1KZwMoO52f1D4B3t1cJS0EuXk1HUw6q16"
+    },
+    {
+     "nome": "03 — CONTRATO E COMPROVANTES",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1rkRmaRhMNjMg6Ff958nju_Yxy_6LWmeg"
+    },
+    {
+     "nome": "04 — DECLARAÇÕES",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1tYvkgQhaauG6CgNM6d6B-sLAuL-7ivuG"
+    },
+    {
+     "nome": "05 — DOCUMENTOS INSTITUCIONAIS",
+     "arquivos": 2,
+     "link": "https://drive.google.com/drive/folders/150tXmOtR9P40ftPBQdW-xJzEctqtBiGc"
+    },
+    {
+     "nome": "06 — HISTÓRICO ACADÊMICO",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/10mFGPYZC0wFIAuBJ-I3w8Uu68QOoX0j_"
+    }
+   ]
+  },
+  {
+   "nome": "02 — SEMESTRE ATUAL",
+   "arquivos": 0,
+   "subpastas": 1,
+   "link": "https://drive.google.com/drive/folders/1JvNf1ydqcLdaw00O7lqS1MOT3o0xWZ1v",
+   "pastas": [
+    {
+     "nome": "01 — Disciplinas do 1º período",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1sDet3ij7ZAEKFK-XjLj3zAWz5UTb1g-I"
+    }
+   ]
+  },
+  {
+   "nome": "03 — PROVAS E REVISÕES",
+   "arquivos": 1,
+   "subpastas": 9,
+   "link": "https://drive.google.com/drive/folders/1GMGRAAYUr832xokDm4PBjjk13NkS9isw",
+   "pastas": [
+    {
+     "nome": "01 — Calendário de Avaliações",
+     "arquivos": 1,
+     "link": "https://drive.google.com/drive/folders/1ufUH8cuIgcZ6Gz_kr3jU74E3iTJWs-S0"
+    },
+    {
+     "nome": "02 — Provas por Disciplina",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/174UWvlagVK7UMfJYsyL7HGJwZBegnR8Z"
+    },
+    {
+     "nome": "03 — Simulados",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1ih5EzquYLZcPzehKyUmBy-8zDDlNqNi_"
+    },
+    {
+     "nome": "04 — Banco de Questões",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1XDgg58IX_yCOoVj7SY7O7WiwugjTZawD"
+    },
+    {
+     "nome": "05 — Revisões para Provas",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1OjjKHDm57RgTU0tft98N86u6d1lh3Uvp"
+    },
+    {
+     "nome": "06 — Dúvidas e Conteúdos Pendentes",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1OxZT-ZYnyjw500jlcZcNMZO0wR0KO0au"
+    },
+    {
+     "nome": "07 — Desempenho e Notas",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1fSi7_mTOM9nqtqIE46h4Ma1bxyCTulih"
+    },
+    {
+     "nome": "08 — Planejamento de Estudos",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/19S87Cq4Xmcvyy3zfOTypR_YglyhKWkvm"
+    },
+    {
+     "nome": "09 — Conteúdos para Estudar",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1pwZnGRhuRGbAbxjTvzR-rEybor95h7D-"
+    }
+   ]
+  },
+  {
+   "nome": "04 — TRABALHOS E SEMINÁRIOS",
+   "arquivos": 2,
+   "subpastas": 7,
+   "link": "https://drive.google.com/drive/folders/1GWDHyuwLHqNq2Y-5rSpQf9Ba3TKqAu3u",
+   "pastas": [
+    {
+     "nome": "01 — Trabalhos Individuais",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1Li6Vy-eg1XK4sxqOt_cUQfyMtRnR-51T"
+    },
+    {
+     "nome": "02 — Trabalhos em Grupo",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1OvVjGze4B5y0uo3d4UJq1kPTYtDyd7CQ"
+    },
+    {
+     "nome": "03 — Seminários e Apresentações",
+     "arquivos": 1,
+     "link": "https://drive.google.com/drive/folders/1wSJd6bz0kYZSqxtSV0XEuYO2fknzLDIu"
+    },
+    {
+     "nome": "04 — Relatórios Acadêmicos",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1jUi2xRd10vFm6-hISKrAC_8QZ_4fTAbY"
+    },
+    {
+     "nome": "05 — Projetos Integradores",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1wTryVHJ5uAQfbby6zKLTvOTuwUxtgXFK"
+    },
+    {
+     "nome": "06 — Pesquisas Científicas",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1XAzZGzKnY8XQgsKZozmbXMFVfyTjyOru"
+    },
+    {
+     "nome": "07 — Trabalhos Entregues",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1hRn83iYTC7gvPucWxJMnXoCre-3sYlPg"
+    }
+   ]
+  },
+  {
+   "nome": "05 — BIBLIOTECA DIGITAL",
+   "arquivos": 1,
+   "subpastas": 7,
+   "link": "https://drive.google.com/drive/folders/1tJg7T49xUKPeMKxA3X13CQo4xZ-gidWG",
+   "pastas": [
+    {
+     "nome": "01 — Livros de Odontologia",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/14Yiwt-UmyJzG6ky4vbiOzDNb4mXRmC4T"
+    },
+    {
+     "nome": "02 — Anatomia e Histologia",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/11dAZky3oQG81KT2UBC-XezJWoSwYnuQT"
+    },
+    {
+     "nome": "03 — Artigos Científicos",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1pO6hnTxC7j6LJPIQU4NzhzeQv7WeYDah"
+    },
+    {
+     "nome": "04 — Revistas e Publicações",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1SDo-qlu6wpF3LDjstgmL54_d-DX5oFuR"
+    },
+    {
+     "nome": "05 — Manuais e Protocolos",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1xkXIzrKsPmwU2O7rkI7KHE4BQXwMRmau"
+    },
+    {
+     "nome": "06 — Atlas e Materiais Visuais",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1ncFpCsFseKuvKhBqmcstqPAjCtIz2fyP"
+    },
+    {
+     "nome": "07 — Referências Bibliográficas",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/14J7YnGeg-IKHt2twyQLOd_85H8rRTiTi"
+    }
+   ]
+  },
+  {
+   "nome": "06 — LABORATÓRIOS E CLÍNICA",
+   "arquivos": 0,
+   "subpastas": 7,
+   "link": "https://drive.google.com/drive/folders/1S2wGNJ_U_5ycEn5Qyo804h7G-dSpJ3t9",
+   "pastas": [
+    {
+     "nome": "01 — Orientações dos Laboratórios",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1a5IOO5BS6evzFQJHlicgcRNWM7lh-nGh"
+    },
+    {
+     "nome": "02 — Aulas Práticas",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1gdtuAB3itN33swZRmLcwK5sU1PizNc1-"
+    },
+    {
+     "nome": "03 — Materiais e Instrumentais",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1MM4zHRKZ5_L4PRVSw1PXiQbogAzumUPN"
+    },
+    {
+     "nome": "04 — Biossegurança",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1q1rU79xGWMJTOIxeRSe_q5xJTf8YA3gn"
+    },
+    {
+     "nome": "05 — Protocolos e Procedimentos",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1nN3gSnXWIPq0svnR8pKibPX0ChgCnoYt"
+    },
+    {
+     "nome": "06 — Avaliações Práticas",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1x2QPFVKl93LL1xsfmDQ6jSOUCkb4Q_eJ"
+    },
+    {
+     "nome": "07 — Relatórios de Práticas",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1U57qaJiIUgpPDn4wF_OLMDFc-l3KsaSr"
+    }
+   ]
+  },
+  {
+   "nome": "07 — CERTIFICADOS E EVENTOS",
+   "arquivos": 1,
+   "subpastas": 7,
+   "link": "https://drive.google.com/drive/folders/1jTGSUyxx3wJA9b0MxhX_EaF56QkuFfdM",
+   "pastas": [
+    {
+     "nome": "01 — Congressos e Simpósios",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1YOmMGGS11Vn_KsEQs1HZO_xjcLkNpFgc"
+    },
+    {
+     "nome": "02 — Palestras e Workshops",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1M6U2hpVXkGKQOTew2cUo9R58wJSrwxBE"
+    },
+    {
+     "nome": "03 — Cursos e Capacitações",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1Osa9f02rnqyB9iPnU1cwuX6AInbQKqRk"
+    },
+    {
+     "nome": "04 — Certificados",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1uodwQuyTP9Kip_t528vJU4fIdBtfaHlr"
+    },
+    {
+     "nome": "05 — Atividades Complementares",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1eSulHKxN9D7NAKq8Ot76NdqlJBvFSgD6"
+    },
+    {
+     "nome": "06 — Comprovantes e Declarações",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1V20mEtUjWTmogwmUKj22dcyY5xWZuSGN"
+    },
+    {
+     "nome": "07 — Controle de Horas Complementares",
+     "arquivos": 1,
+     "link": "https://drive.google.com/drive/folders/1sY8UWVWJnawHIBlGSDYDwh0ONXFaZrLI"
+    }
+   ]
+  },
+  {
+   "nome": "08 — ESTÁGIOS E CARREIRA",
+   "arquivos": 2,
+   "subpastas": 4,
+   "link": "https://drive.google.com/drive/folders/1sSlzbMCxMFLOucAOX97gnmx8USO0qgO6",
+   "pastas": [
+    {
+     "nome": "01 — ORIENTAÇÕES",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1VzbJozscf1b7phUn3WAriNVvL4X8LBml"
+    },
+    {
+     "nome": "02 — ATIVIDADES PRÁTICAS",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1zbguUEMW_jGWXP3qHt1H37ORVoQZaPKV"
+    },
+    {
+     "nome": "03 — RELATÓRIOS",
+     "arquivos": 2,
+     "link": "https://drive.google.com/drive/folders/1Y6RCBn1YYg2J0gLCocpLPwtBWwe3js9J"
+    },
+    {
+     "nome": "04 — COMPROVANTES",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1BOFCXpQg3KAkIvrCfjG8m-wuiRUXODeZ"
+    }
+   ]
+  },
+  {
+   "nome": "09 — SEMESTRES CONCLUÍDOS",
+   "arquivos": 2,
+   "subpastas": 4,
+   "link": "https://drive.google.com/drive/folders/1HyV_Q4vawGiIcjLa7gejDlSaa_iDjKLa",
+   "pastas": [
+    {
+     "nome": "01 — SEMESTRES CONCLUÍDOS",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1AEG2itbUaTtQ0s3IuszaBVZPJSxPtwB2"
+    },
+    {
+     "nome": "02 — TRABALHOS ANTIGOS",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1QscPd8IFquSS4yDFnrlymNa022dl_E-0"
+    },
+    {
+     "nome": "03 — DOCUMENTOS ARQUIVADOS",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1yGt3btFUpeLchdBZO-dyo_Mmv-6PxYXX"
+    },
+    {
+     "nome": "04 — ESTRUTURAS ANTIGAS",
+     "arquivos": 1,
+     "link": "https://drive.google.com/drive/folders/1QAldpeit4QUYuTo0CYSjeRrRNVoi5Van"
+    }
+   ]
+  },
+  {
+   "nome": "10 — FINANCEIRO ACADÊMICO",
+   "arquivos": 3,
+   "subpastas": 4,
+   "link": "https://drive.google.com/drive/folders/1-QGSZLcvrXLHanM72_61jsUNYmNKmtRw",
+   "pastas": [
+    {
+     "nome": "01 — MENSALIDADES",
+     "arquivos": 2,
+     "link": "https://drive.google.com/drive/folders/1vx3936Wc-b7yuwsDqqff73cnSrcw3IQ8"
+    },
+    {
+     "nome": "02 — COMPROVANTES DE PAGAMENTO",
+     "arquivos": 1,
+     "link": "https://drive.google.com/drive/folders/1CDo2yaUkh74DWLvu_Mw7UWsep89A_qVX"
+    },
+    {
+     "nome": "03 — BOLSAS E DESCONTOS",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/1NRofGPJIMNaweEOSIonP1X41eJtC21vL"
+    },
+    {
+     "nome": "04 — PLANEJAMENTO FINANCEIRO",
+     "arquivos": 0,
+     "link": "https://drive.google.com/drive/folders/14y1lvZqiqt_jCn-GOEJAMP09VsRNDHFf"
+    }
+   ]
+  },
+  {
+   "nome": "11 — RECEBIDOS DA INSTITUIÇÃO (documentos antigos)",
+   "arquivos": 2,
+   "subpastas": 2,
+   "link": "https://drive.google.com/drive/folders/1zkmla4TE0l5NSOjXQHaCFrqIY_nUeMmG",
+   "pastas": [
+    {
+     "nome": "Materiais e Martiz curricular ",
+     "arquivos": 1,
+     "link": "https://drive.google.com/drive/folders/1Mkp9A127VkRXHlabJY5V1sCA9ihvT7Kk"
+    },
+    {
+     "nome": "Pagamentos",
+     "arquivos": 1,
+     "link": "https://drive.google.com/drive/folders/17N_FXuKsyasl__-W87k56dZjoZmzLOi8"
+    }
+   ]
+  }
+ ],
+ "totalArquivos": 26,
+ "totalPastas": 78,
+ "financeiro": [
+  {
+   "descricao": "1ª parcela 2027 - Odontologia 1º período",
+   "valor": 970.6,
+   "vencimento": "2026-10-05",
+   "status": "a confirmar"
+  }
+ ],
+ "agenda": [],
+ "pastasDrive": [
+  {
+   "nome": "00 — CENTRAL ACADÊMICA",
+   "id": "1XlVO3ZAezJC59w5T07H2mXWr4Cf42CQH",
+   "link": "https://drive.google.com/drive/folders/1XlVO3ZAezJC59w5T07H2mXWr4Cf42CQH",
+   "arquivos": [],
+   "subpastas": [
+    {
+     "nome": "01 — PAINEL ACADÊMICO",
+     "id": "1TquWpkkIFBEoXRsk0jMgbl2HZXHRxA3J",
+     "link": "https://drive.google.com/drive/folders/1TquWpkkIFBEoXRsk0jMgbl2HZXHRxA3J",
+     "arquivos": [
+      {
+       "nome": "PAINEL ACADÊMICO — SEMESTRE ATUAL",
+       "link": "https://docs.google.com/document/d/1UUeVVpQzscaY_wFxjEwtTnkMrQk-PKtzTC8NtZBPsik/edit?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.document"
+      },
+      {
+       "nome": "PAINEL DE HORAS E TRAJETÓRIA — ODONTOLOGIA 2027",
+       "link": "https://docs.google.com/spreadsheets/d/1tg1HPlK0dgLEOGH6Lz-B5wu8T_Dsxkv4SXB8sso92U0/edit?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.spreadsheet"
+      }
+     ]
+    },
+    {
+     "nome": "02 — CALENDÁRIO ACADÊMICO",
+     "id": "1WpilgMkg2a5eYg_wpNY69UIG2PCyXLRP",
+     "link": "https://drive.google.com/drive/folders/1WpilgMkg2a5eYg_wpNY69UIG2PCyXLRP",
+     "arquivos": []
+    },
+    {
+     "nome": "02 — CONTATOS E CANAIS OFICIAIS",
+     "id": "17eTlinYJ3VkvUh_6oPJkMzUeZd1cONzC",
+     "link": "https://drive.google.com/drive/folders/17eTlinYJ3VkvUh_6oPJkMzUeZd1cONzC",
+     "arquivos": []
+    },
+    {
+     "nome": "03 — HORÁRIOS",
+     "id": "1wojtGdIULzohF9MLjpiNQbJcmO5c3SuW",
+     "link": "https://drive.google.com/drive/folders/1wojtGdIULzohF9MLjpiNQbJcmO5c3SuW",
+     "arquivos": [
+      {
+       "nome": "PAINEL DE DISCIPLINAS E HORÁRIOS — 1º TERMO 2027/1",
+       "link": "https://docs.google.com/spreadsheets/d/1QwWOvuBNSV-zur6429p6ZkBv-WcbZwRUT1U4PUcBfB0/edit?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.spreadsheet"
+      }
+     ]
+    },
+    {
+     "nome": "04 — CENTRAL DE ATIVIDADES",
+     "id": "1ZcEnLMcJCHDypkbf-aO7fwwhI9dj1uKv",
+     "link": "https://drive.google.com/drive/folders/1ZcEnLMcJCHDypkbf-aO7fwwhI9dj1uKv",
+     "arquivos": [
+      {
+       "nome": "CONTROLE GERAL DE ATIVIDADES — ODONTOLOGIA",
+       "link": "https://docs.google.com/spreadsheets/d/18PZsemrHiPzLxxwn2bGL-6qM4iJG95vEUZBQkIEjWRo/edit?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.spreadsheet"
+      }
+     ]
+    },
+    {
+     "nome": "05 — CONTROLE DE PENDÊNCIAS",
+     "id": "1PxkQOTnPOKIwLGgYiQOAIlzowe3RlABh",
+     "link": "https://drive.google.com/drive/folders/1PxkQOTnPOKIwLGgYiQOAIlzowe3RlABh",
+     "arquivos": [
+      {
+       "nome": "CONTROLE DE DOCUMENTAÇÃO ACADÊMICA",
+       "link": "https://docs.google.com/spreadsheets/d/1uV5w7MY3eoHI4uBhr9zkAWcnQvW3pdQ4EepNPxWo2ZM/edit?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.spreadsheet"
+      },
+      {
+       "nome": "PENDÊNCIAS E PRÓXIMOS PASSOS — 2027/1",
+       "link": "https://docs.google.com/document/d/1CnMNEuFsJGveXsnMZ2xJv37H3ma5z1MfMdb-hfx4nlg/edit?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.document"
+      }
+     ]
+    },
+    {
+     "nome": "06 — RELATÓRIOS ACADÊMICOS",
+     "id": "1a3rmIhQPC33eJvaVamzErtfQ3Xgpnglo",
+     "link": "https://drive.google.com/drive/folders/1a3rmIhQPC33eJvaVamzErtfQ3Xgpnglo",
+     "arquivos": [
+      {
+       "nome": "REGISTRO DE OPERAÇÕES — CENTRAL ACADÊMICA",
+       "link": "https://docs.google.com/spreadsheets/d/1GEXr8I-5neKL57KFbHXuFjd20RzIc3qTuwShbZ7NBJM/edit?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.spreadsheet"
+      },
+      {
+       "nome": "RELATÓRIO DE IMPLANTAÇÃO — CENTRAL ACADÊMICA",
+       "link": "https://docs.google.com/document/d/1M6sRZ5ew-OQ15wuQPMHvRYY-h5jXOVw27IWmzKVhKiE/edit?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.document"
+      }
+     ]
+    },
+    {
+     "nome": "07 — AUTOMAÇÕES",
+     "id": "1dOixqaYz5_aLzQtZNUzBpBPAqqyqS0Dq",
+     "link": "https://drive.google.com/drive/folders/1dOixqaYz5_aLzQtZNUzBpBPAqqyqS0Dq",
+     "arquivos": [
+      {
+       "nome": "AUTOMAÇÕES — CENTRAL ACADÊMICA (código Apps Script)",
+       "link": "https://docs.google.com/document/d/1bNVQjygl9kPFr4U8Zz205Rn0_xbRYJqQBDGJSoWPn0A/edit?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.document"
+      },
+      {
+       "nome": "CentralAcademica2027.gs",
+       "link": "https://drive.google.com/file/d/16Zkq_g-zDnpZ5Bq73JUmAmLeFAzYOogK/view?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "text/plain"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "01 — MATRÍCULA E DOCUMENTOS",
+   "id": "1e2zTcpcJrlPfytuCyUgE5JmCT9G2B_Ss",
+   "link": "https://drive.google.com/drive/folders/1e2zTcpcJrlPfytuCyUgE5JmCT9G2B_Ss",
+   "arquivos": [],
+   "subpastas": [
+    {
+     "nome": "01 — DOCUMENTOS PESSOAIS",
+     "id": "11OnTlbos0IqGAcBX6xt5anVeVQB9Cm9a",
+     "link": "https://drive.google.com/drive/folders/11OnTlbos0IqGAcBX6xt5anVeVQB9Cm9a",
+     "arquivos": []
+    },
+    {
+     "nome": "02 — DOCUMENTOS DE MATRÍCULA",
+     "id": "1KZwMoO52f1D4B3t1cJS0EuXk1HUw6q16",
+     "link": "https://drive.google.com/drive/folders/1KZwMoO52f1D4B3t1cJS0EuXk1HUw6q16",
+     "arquivos": []
+    },
+    {
+     "nome": "03 — CONTRATO E COMPROVANTES",
+     "id": "1rkRmaRhMNjMg6Ff958nju_Yxy_6LWmeg",
+     "link": "https://drive.google.com/drive/folders/1rkRmaRhMNjMg6Ff958nju_Yxy_6LWmeg",
+     "arquivos": []
+    },
+    {
+     "nome": "04 — DECLARAÇÕES",
+     "id": "1tYvkgQhaauG6CgNM6d6B-sLAuL-7ivuG",
+     "link": "https://drive.google.com/drive/folders/1tYvkgQhaauG6CgNM6d6B-sLAuL-7ivuG",
+     "arquivos": []
+    },
+    {
+     "nome": "05 — DOCUMENTOS INSTITUCIONAIS",
+     "id": "150tXmOtR9P40ftPBQdW-xJzEctqtBiGc",
+     "link": "https://drive.google.com/drive/folders/150tXmOtR9P40ftPBQdW-xJzEctqtBiGc",
+     "arquivos": [
+      {
+       "nome": "Atalho — Estrutura curricular do curso (PDF de 24/10)",
+       "link": "https://drive.google.com/file/d/1DZq5fnNv-jT8BcX9wMfXwtG3qByaFFGC/view?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.shortcut"
+      },
+      {
+       "nome": "Atalho — pasta FACULDADE (materiais e matriz curricular)",
+       "link": "https://drive.google.com/file/d/1Airrtn7Ku_H671Xe37ZoUrN-6S1DdvfK/view?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.shortcut"
+      }
+     ]
+    },
+    {
+     "nome": "06 — HISTÓRICO ACADÊMICO",
+     "id": "10mFGPYZC0wFIAuBJ-I3w8Uu68QOoX0j_",
+     "link": "https://drive.google.com/drive/folders/10mFGPYZC0wFIAuBJ-I3w8Uu68QOoX0j_",
+     "arquivos": []
+    }
+   ]
+  },
+  {
+   "nome": "02 — SEMESTRE ATUAL",
+   "id": "1JvNf1ydqcLdaw00O7lqS1MOT3o0xWZ1v",
+   "link": "https://drive.google.com/drive/folders/1JvNf1ydqcLdaw00O7lqS1MOT3o0xWZ1v",
+   "arquivos": [],
+   "subpastas": [
+    {
+     "nome": "01 — Disciplinas do 1º período",
+     "id": "1sDet3ij7ZAEKFK-XjLj3zAWz5UTb1g-I",
+     "link": "https://drive.google.com/drive/folders/1sDet3ij7ZAEKFK-XjLj3zAWz5UTb1g-I",
+     "arquivos": []
+    }
+   ]
+  },
+  {
+   "nome": "03 — PROVAS E REVISÕES",
+   "id": "1GMGRAAYUr832xokDm4PBjjk13NkS9isw",
+   "link": "https://drive.google.com/drive/folders/1GMGRAAYUr832xokDm4PBjjk13NkS9isw",
+   "arquivos": [],
+   "subpastas": [
+    {
+     "nome": "01 — Calendário de Avaliações",
+     "id": "1ufUH8cuIgcZ6Gz_kr3jU74E3iTJWs-S0",
+     "link": "https://drive.google.com/drive/folders/1ufUH8cuIgcZ6Gz_kr3jU74E3iTJWs-S0",
+     "arquivos": [
+      {
+       "nome": "CALENDÁRIO DE PROVAS E REVISÕES — ODONTOLOGIA",
+       "link": "https://docs.google.com/spreadsheets/d/1NQAvRpwHXfpAxYlLS_-6gpuij1G7tPCn9Q5XlwA7_xM/edit?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.spreadsheet"
+      }
+     ]
+    },
+    {
+     "nome": "02 — Provas por Disciplina",
+     "id": "174UWvlagVK7UMfJYsyL7HGJwZBegnR8Z",
+     "link": "https://drive.google.com/drive/folders/174UWvlagVK7UMfJYsyL7HGJwZBegnR8Z",
+     "arquivos": []
+    },
+    {
+     "nome": "03 — Simulados",
+     "id": "1ih5EzquYLZcPzehKyUmBy-8zDDlNqNi_",
+     "link": "https://drive.google.com/drive/folders/1ih5EzquYLZcPzehKyUmBy-8zDDlNqNi_",
+     "arquivos": []
+    },
+    {
+     "nome": "04 — Banco de Questões",
+     "id": "1XDgg58IX_yCOoVj7SY7O7WiwugjTZawD",
+     "link": "https://drive.google.com/drive/folders/1XDgg58IX_yCOoVj7SY7O7WiwugjTZawD",
+     "arquivos": []
+    },
+    {
+     "nome": "05 — Revisões para Provas",
+     "id": "1OjjKHDm57RgTU0tft98N86u6d1lh3Uvp",
+     "link": "https://drive.google.com/drive/folders/1OjjKHDm57RgTU0tft98N86u6d1lh3Uvp",
+     "arquivos": []
+    },
+    {
+     "nome": "06 — Dúvidas e Conteúdos Pendentes",
+     "id": "1OxZT-ZYnyjw500jlcZcNMZO0wR0KO0au",
+     "link": "https://drive.google.com/drive/folders/1OxZT-ZYnyjw500jlcZcNMZO0wR0KO0au",
+     "arquivos": []
+    },
+    {
+     "nome": "07 — Desempenho e Notas",
+     "id": "1fSi7_mTOM9nqtqIE46h4Ma1bxyCTulih",
+     "link": "https://drive.google.com/drive/folders/1fSi7_mTOM9nqtqIE46h4Ma1bxyCTulih",
+     "arquivos": []
+    },
+    {
+     "nome": "08 — Planejamento de Estudos",
+     "id": "19S87Cq4Xmcvyy3zfOTypR_YglyhKWkvm",
+     "link": "https://drive.google.com/drive/folders/19S87Cq4Xmcvyy3zfOTypR_YglyhKWkvm",
+     "arquivos": []
+    },
+    {
+     "nome": "09 — Conteúdos para Estudar",
+     "id": "1pwZnGRhuRGbAbxjTvzR-rEybor95h7D-",
+     "link": "https://drive.google.com/drive/folders/1pwZnGRhuRGbAbxjTvzR-rEybor95h7D-",
+     "arquivos": []
+    }
+   ]
+  },
+  {
+   "nome": "04 — TRABALHOS E SEMINÁRIOS",
+   "id": "1GWDHyuwLHqNq2Y-5rSpQf9Ba3TKqAu3u",
+   "link": "https://drive.google.com/drive/folders/1GWDHyuwLHqNq2Y-5rSpQf9Ba3TKqAu3u",
+   "arquivos": [
+    {
+     "nome": "GERENCIADOR DE TRABALHOS ACADÊMICOS",
+     "link": "https://docs.google.com/spreadsheets/d/1KS8Fdo5vpeW0nVB5zzd8Z4n9S1GTIl4CdmKDlSbIqxY/edit?usp=drivesdk",
+     "mod": "2026-11-13",
+     "tipo": "application/vnd.google-apps.spreadsheet"
+    }
+   ],
+   "subpastas": [
+    {
+     "nome": "01 — Trabalhos Individuais",
+     "id": "1Li6Vy-eg1XK4sxqOt_cUQfyMtRnR-51T",
+     "link": "https://drive.google.com/drive/folders/1Li6Vy-eg1XK4sxqOt_cUQfyMtRnR-51T",
+     "arquivos": []
+    },
+    {
+     "nome": "02 — Trabalhos em Grupo",
+     "id": "1OvVjGze4B5y0uo3d4UJq1kPTYtDyd7CQ",
+     "link": "https://drive.google.com/drive/folders/1OvVjGze4B5y0uo3d4UJq1kPTYtDyd7CQ",
+     "arquivos": []
+    },
+    {
+     "nome": "03 — Seminários e Apresentações",
+     "id": "1wSJd6bz0kYZSqxtSV0XEuYO2fknzLDIu",
+     "link": "https://drive.google.com/drive/folders/1wSJd6bz0kYZSqxtSV0XEuYO2fknzLDIu",
+     "arquivos": [
+      {
+       "nome": "MODELO — Seminário e Apresentação",
+       "link": "https://docs.google.com/document/d/17UZ1v9kOEgfSpNv_Ux3Kq3YmcRmtfGDptn1VnPNjC30/edit?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.document"
+      }
+     ]
+    },
+    {
+     "nome": "04 — Relatórios Acadêmicos",
+     "id": "1jUi2xRd10vFm6-hISKrAC_8QZ_4fTAbY",
+     "link": "https://drive.google.com/drive/folders/1jUi2xRd10vFm6-hISKrAC_8QZ_4fTAbY",
+     "arquivos": []
+    },
+    {
+     "nome": "05 — Projetos Integradores",
+     "id": "1wTryVHJ5uAQfbby6zKLTvOTuwUxtgXFK",
+     "link": "https://drive.google.com/drive/folders/1wTryVHJ5uAQfbby6zKLTvOTuwUxtgXFK",
+     "arquivos": []
+    },
+    {
+     "nome": "06 — Pesquisas Científicas",
+     "id": "1XAzZGzKnY8XQgsKZozmbXMFVfyTjyOru",
+     "link": "https://drive.google.com/drive/folders/1XAzZGzKnY8XQgsKZozmbXMFVfyTjyOru",
+     "arquivos": []
+    },
+    {
+     "nome": "07 — Trabalhos Entregues",
+     "id": "1hRn83iYTC7gvPucWxJMnXoCre-3sYlPg",
+     "link": "https://drive.google.com/drive/folders/1hRn83iYTC7gvPucWxJMnXoCre-3sYlPg",
+     "arquivos": []
+    }
+   ]
+  },
+  {
+   "nome": "05 — BIBLIOTECA DIGITAL",
+   "id": "1tJg7T49xUKPeMKxA3X13CQo4xZ-gidWG",
+   "link": "https://drive.google.com/drive/folders/1tJg7T49xUKPeMKxA3X13CQo4xZ-gidWG",
+   "arquivos": [
+    {
+     "nome": "CATÁLOGO DA BIBLIOTECA DIGITAL",
+     "link": "https://docs.google.com/spreadsheets/d/1NhSEvVNlA6hIHRKqiV8s_gNGKCxvW12viQOk9RjS1zs/edit?usp=drivesdk",
+     "mod": "2026-11-13",
+     "tipo": "application/vnd.google-apps.spreadsheet"
+    }
+   ],
+   "subpastas": [
+    {
+     "nome": "01 — Livros de Odontologia",
+     "id": "14Yiwt-UmyJzG6ky4vbiOzDNb4mXRmC4T",
+     "link": "https://drive.google.com/drive/folders/14Yiwt-UmyJzG6ky4vbiOzDNb4mXRmC4T",
+     "arquivos": []
+    },
+    {
+     "nome": "02 — Anatomia e Histologia",
+     "id": "11dAZky3oQG81KT2UBC-XezJWoSwYnuQT",
+     "link": "https://drive.google.com/drive/folders/11dAZky3oQG81KT2UBC-XezJWoSwYnuQT",
+     "arquivos": []
+    },
+    {
+     "nome": "03 — Artigos Científicos",
+     "id": "1pO6hnTxC7j6LJPIQU4NzhzeQv7WeYDah",
+     "link": "https://drive.google.com/drive/folders/1pO6hnTxC7j6LJPIQU4NzhzeQv7WeYDah",
+     "arquivos": []
+    },
+    {
+     "nome": "04 — Revistas e Publicações",
+     "id": "1SDo-qlu6wpF3LDjstgmL54_d-DX5oFuR",
+     "link": "https://drive.google.com/drive/folders/1SDo-qlu6wpF3LDjstgmL54_d-DX5oFuR",
+     "arquivos": []
+    },
+    {
+     "nome": "05 — Manuais e Protocolos",
+     "id": "1xkXIzrKsPmwU2O7rkI7KHE4BQXwMRmau",
+     "link": "https://drive.google.com/drive/folders/1xkXIzrKsPmwU2O7rkI7KHE4BQXwMRmau",
+     "arquivos": []
+    },
+    {
+     "nome": "06 — Atlas e Materiais Visuais",
+     "id": "1ncFpCsFseKuvKhBqmcstqPAjCtIz2fyP",
+     "link": "https://drive.google.com/drive/folders/1ncFpCsFseKuvKhBqmcstqPAjCtIz2fyP",
+     "arquivos": []
+    },
+    {
+     "nome": "07 — Referências Bibliográficas",
+     "id": "14J7YnGeg-IKHt2twyQLOd_85H8rRTiTi",
+     "link": "https://drive.google.com/drive/folders/14J7YnGeg-IKHt2twyQLOd_85H8rRTiTi",
+     "arquivos": []
+    }
+   ]
+  },
+  {
+   "nome": "06 — LABORATÓRIOS E CLÍNICA",
+   "id": "1S2wGNJ_U_5ycEn5Qyo804h7G-dSpJ3t9",
+   "link": "https://drive.google.com/drive/folders/1S2wGNJ_U_5ycEn5Qyo804h7G-dSpJ3t9",
+   "arquivos": [],
+   "subpastas": [
+    {
+     "nome": "01 — Orientações dos Laboratórios",
+     "id": "1a5IOO5BS6evzFQJHlicgcRNWM7lh-nGh",
+     "link": "https://drive.google.com/drive/folders/1a5IOO5BS6evzFQJHlicgcRNWM7lh-nGh",
+     "arquivos": []
+    },
+    {
+     "nome": "02 — Aulas Práticas",
+     "id": "1gdtuAB3itN33swZRmLcwK5sU1PizNc1-",
+     "link": "https://drive.google.com/drive/folders/1gdtuAB3itN33swZRmLcwK5sU1PizNc1-",
+     "arquivos": []
+    },
+    {
+     "nome": "03 — Materiais e Instrumentais",
+     "id": "1MM4zHRKZ5_L4PRVSw1PXiQbogAzumUPN",
+     "link": "https://drive.google.com/drive/folders/1MM4zHRKZ5_L4PRVSw1PXiQbogAzumUPN",
+     "arquivos": []
+    },
+    {
+     "nome": "04 — Biossegurança",
+     "id": "1q1rU79xGWMJTOIxeRSe_q5xJTf8YA3gn",
+     "link": "https://drive.google.com/drive/folders/1q1rU79xGWMJTOIxeRSe_q5xJTf8YA3gn",
+     "arquivos": []
+    },
+    {
+     "nome": "05 — Protocolos e Procedimentos",
+     "id": "1nN3gSnXWIPq0svnR8pKibPX0ChgCnoYt",
+     "link": "https://drive.google.com/drive/folders/1nN3gSnXWIPq0svnR8pKibPX0ChgCnoYt",
+     "arquivos": []
+    },
+    {
+     "nome": "06 — Avaliações Práticas",
+     "id": "1x2QPFVKl93LL1xsfmDQ6jSOUCkb4Q_eJ",
+     "link": "https://drive.google.com/drive/folders/1x2QPFVKl93LL1xsfmDQ6jSOUCkb4Q_eJ",
+     "arquivos": []
+    },
+    {
+     "nome": "07 — Relatórios de Práticas",
+     "id": "1U57qaJiIUgpPDn4wF_OLMDFc-l3KsaSr",
+     "link": "https://drive.google.com/drive/folders/1U57qaJiIUgpPDn4wF_OLMDFc-l3KsaSr",
+     "arquivos": []
+    }
+   ]
+  },
+  {
+   "nome": "07 — CERTIFICADOS E EVENTOS",
+   "id": "1jTGSUyxx3wJA9b0MxhX_EaF56QkuFfdM",
+   "link": "https://drive.google.com/drive/folders/1jTGSUyxx3wJA9b0MxhX_EaF56QkuFfdM",
+   "arquivos": [],
+   "subpastas": [
+    {
+     "nome": "01 — Congressos e Simpósios",
+     "id": "1YOmMGGS11Vn_KsEQs1HZO_xjcLkNpFgc",
+     "link": "https://drive.google.com/drive/folders/1YOmMGGS11Vn_KsEQs1HZO_xjcLkNpFgc",
+     "arquivos": []
+    },
+    {
+     "nome": "02 — Palestras e Workshops",
+     "id": "1M6U2hpVXkGKQOTew2cUo9R58wJSrwxBE",
+     "link": "https://drive.google.com/drive/folders/1M6U2hpVXkGKQOTew2cUo9R58wJSrwxBE",
+     "arquivos": []
+    },
+    {
+     "nome": "03 — Cursos e Capacitações",
+     "id": "1Osa9f02rnqyB9iPnU1cwuX6AInbQKqRk",
+     "link": "https://drive.google.com/drive/folders/1Osa9f02rnqyB9iPnU1cwuX6AInbQKqRk",
+     "arquivos": []
+    },
+    {
+     "nome": "04 — Certificados",
+     "id": "1uodwQuyTP9Kip_t528vJU4fIdBtfaHlr",
+     "link": "https://drive.google.com/drive/folders/1uodwQuyTP9Kip_t528vJU4fIdBtfaHlr",
+     "arquivos": []
+    },
+    {
+     "nome": "05 — Atividades Complementares",
+     "id": "1eSulHKxN9D7NAKq8Ot76NdqlJBvFSgD6",
+     "link": "https://drive.google.com/drive/folders/1eSulHKxN9D7NAKq8Ot76NdqlJBvFSgD6",
+     "arquivos": []
+    },
+    {
+     "nome": "06 — Comprovantes e Declarações",
+     "id": "1V20mEtUjWTmogwmUKj22dcyY5xWZuSGN",
+     "link": "https://drive.google.com/drive/folders/1V20mEtUjWTmogwmUKj22dcyY5xWZuSGN",
+     "arquivos": []
+    },
+    {
+     "nome": "07 — Controle de Horas Complementares",
+     "id": "1sY8UWVWJnawHIBlGSDYDwh0ONXFaZrLI",
+     "link": "https://drive.google.com/drive/folders/1sY8UWVWJnawHIBlGSDYDwh0ONXFaZrLI",
+     "arquivos": [
+      {
+       "nome": "Atalho — PAINEL DE HORAS E TRAJETÓRIA",
+       "link": "https://drive.google.com/file/d/1PuAkX62Qx0Vr8NPhhY0lEQ1QZWjYHrfm/view?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.shortcut"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "08 — ESTÁGIOS E CARREIRA",
+   "id": "1sSlzbMCxMFLOucAOX97gnmx8USO0qgO6",
+   "link": "https://drive.google.com/drive/folders/1sSlzbMCxMFLOucAOX97gnmx8USO0qgO6",
+   "arquivos": [],
+   "subpastas": [
+    {
+     "nome": "01 — ORIENTAÇÕES",
+     "id": "1VzbJozscf1b7phUn3WAriNVvL4X8LBml",
+     "link": "https://drive.google.com/drive/folders/1VzbJozscf1b7phUn3WAriNVvL4X8LBml",
+     "arquivos": []
+    },
+    {
+     "nome": "02 — ATIVIDADES PRÁTICAS",
+     "id": "1zbguUEMW_jGWXP3qHt1H37ORVoQZaPKV",
+     "link": "https://drive.google.com/drive/folders/1zbguUEMW_jGWXP3qHt1H37ORVoQZaPKV",
+     "arquivos": []
+    },
+    {
+     "nome": "03 — RELATÓRIOS",
+     "id": "1Y6RCBn1YYg2J0gLCocpLPwtBWwe3js9J",
+     "link": "https://drive.google.com/drive/folders/1Y6RCBn1YYg2J0gLCocpLPwtBWwe3js9J",
+     "arquivos": [
+      {
+       "nome": "Atalho — PAINEL DE HORAS E TRAJETÓRIA",
+       "link": "https://drive.google.com/file/d/1300x7D7V360VlU2tVm9GbTuYHjp0I2JX/view?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.shortcut"
+      },
+      {
+       "nome": "MODELO — Relatório de Práticas e Estágio",
+       "link": "https://docs.google.com/document/d/1sL3y1PQmpBJRPW_MyN8qo7Q-GDCK0PSiHYCNslzUyvw/edit?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.document"
+      }
+     ]
+    },
+    {
+     "nome": "04 — COMPROVANTES",
+     "id": "1BOFCXpQg3KAkIvrCfjG8m-wuiRUXODeZ",
+     "link": "https://drive.google.com/drive/folders/1BOFCXpQg3KAkIvrCfjG8m-wuiRUXODeZ",
+     "arquivos": []
+    }
+   ]
+  },
+  {
+   "nome": "09 — SEMESTRES CONCLUÍDOS",
+   "id": "1HyV_Q4vawGiIcjLa7gejDlSaa_iDjKLa",
+   "link": "https://drive.google.com/drive/folders/1HyV_Q4vawGiIcjLa7gejDlSaa_iDjKLa",
+   "arquivos": [
+    {
+     "nome": "Atalho — PAINEL DE HORAS E TRAJETÓRIA",
+     "link": "https://drive.google.com/file/d/1GGjc2gRArYOBXsI-SHQIrmoNrhqODcZV/view?usp=drivesdk",
+     "mod": "2026-11-13",
+     "tipo": "application/vnd.google-apps.shortcut"
+    }
+   ],
+   "subpastas": [
+    {
+     "nome": "01 — SEMESTRES CONCLUÍDOS",
+     "id": "1AEG2itbUaTtQ0s3IuszaBVZPJSxPtwB2",
+     "link": "https://drive.google.com/drive/folders/1AEG2itbUaTtQ0s3IuszaBVZPJSxPtwB2",
+     "arquivos": []
+    },
+    {
+     "nome": "02 — TRABALHOS ANTIGOS",
+     "id": "1QscPd8IFquSS4yDFnrlymNa022dl_E-0",
+     "link": "https://drive.google.com/drive/folders/1QscPd8IFquSS4yDFnrlymNa022dl_E-0",
+     "arquivos": []
+    },
+    {
+     "nome": "03 — DOCUMENTOS ARQUIVADOS",
+     "id": "1yGt3btFUpeLchdBZO-dyo_Mmv-6PxYXX",
+     "link": "https://drive.google.com/drive/folders/1yGt3btFUpeLchdBZO-dyo_Mmv-6PxYXX",
+     "arquivos": []
+    },
+    {
+     "nome": "04 — ESTRUTURAS ANTIGAS",
+     "id": "1QAldpeit4QUYuTo0CYSjeRrRNVoi5Van",
+     "link": "https://drive.google.com/drive/folders/1QAldpeit4QUYuTo0CYSjeRrRNVoi5Van",
+     "arquivos": [
+      {
+       "nome": "PAINEL ACADÊMICO — versão original de 29/10 (substituída)",
+       "link": "https://docs.google.com/document/d/1yEtvGIrgurcewa-16DYkZg2zbwIftj3a9Yz1EUT0HKA/edit?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.document"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "nome": "10 — FINANCEIRO ACADÊMICO",
+   "id": "1-QGSZLcvrXLHanM72_61jsUNYmNKmtRw",
+   "link": "https://drive.google.com/drive/folders/1-QGSZLcvrXLHanM72_61jsUNYmNKmtRw",
+   "arquivos": [],
+   "subpastas": [
+    {
+     "nome": "01 — MENSALIDADES",
+     "id": "1vx3936Wc-b7yuwsDqqff73cnSrcw3IQ8",
+     "link": "https://drive.google.com/drive/folders/1vx3936Wc-b7yuwsDqqff73cnSrcw3IQ8",
+     "arquivos": [
+      {
+       "nome": "Atalho — PAINEL DE HORAS E TRAJETÓRIA",
+       "link": "https://drive.google.com/file/d/1oMvzk0VOlbGpAtiEIu2phlXfh3kHOSjq/view?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.shortcut"
+      },
+      {
+       "nome": "UNIFAFIBE — Boleto SICOOB 41247370 — 02-10-2026.pdf",
+       "link": "https://drive.google.com/file/d/1CVoIF_OzWycsrI5TTKAavBbR46Ubr6WE/view?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/pdf"
+      }
+     ]
+    },
+    {
+     "nome": "02 — COMPROVANTES DE PAGAMENTO",
+     "id": "1CDo2yaUkh74DWLvu_Mw7UWsep89A_qVX",
+     "link": "https://drive.google.com/drive/folders/1CDo2yaUkh74DWLvu_Mw7UWsep89A_qVX",
+     "arquivos": [
+      {
+       "nome": "Atalho — pasta Pagamentos (boleto SICOOB de 02/10/2026)",
+       "link": "https://drive.google.com/file/d/15K027-j_vIUVFX70rC4c3EWt4mbyGWZi/view?usp=drivesdk",
+       "mod": "2026-11-13",
+       "tipo": "application/vnd.google-apps.shortcut"
+      }
+     ]
+    },
+    {
+     "nome": "03 — BOLSAS E DESCONTOS",
+     "id": "1NRofGPJIMNaweEOSIonP1X41eJtC21vL",
+     "link": "https://drive.google.com/drive/folders/1NRofGPJIMNaweEOSIonP1X41eJtC21vL",
+     "arquivos": []
+    },
+    {
+     "nome": "04 — PLANEJAMENTO FINANCEIRO",
+     "id": "14y1lvZqiqt_jCn-GOEJAMP09VsRNDHFf",
+     "link": "https://drive.google.com/drive/folders/14y1lvZqiqt_jCn-GOEJAMP09VsRNDHFf",
+     "arquivos": []
+    }
+   ]
+  },
+  {
+   "nome": "11 — RECEBIDOS DA INSTITUIÇÃO (documentos antigos)",
+   "id": "1zkmla4TE0l5NSOjXQHaCFrqIY_nUeMmG",
+   "link": "https://drive.google.com/drive/folders/1zkmla4TE0l5NSOjXQHaCFrqIY_nUeMmG",
+   "arquivos": [],
+   "subpastas": [
+    {
+     "nome": "Materiais e Martiz curricular ",
+     "id": "1Mkp9A127VkRXHlabJY5V1sCA9ihvT7Kk",
+     "link": "https://drive.google.com/drive/folders/1Mkp9A127VkRXHlabJY5V1sCA9ihvT7Kk",
+     "arquivos": [
+      {
+       "nome": "ESTRUTURA CURRICULAR ODONTOLOGIA - SITE_cópia.pdf",
+       "link": "https://drive.google.com/file/d/1kE1rTWoU_xfzsmLpGW0Lla9JvosmPNh7/view?usp=drivesdk",
+       "mod": "2026-10-24",
+       "tipo": "application/pdf"
+      }
+     ]
+    },
+    {
+     "nome": "Pagamentos",
+     "id": "17N_FXuKsyasl__-W87k56dZjoZmzLOi8",
+     "link": "https://drive.google.com/drive/folders/17N_FXuKsyasl__-W87k56dZjoZmzLOi8",
+     "arquivos": [
+      {
+       "nome": "UNIFAFIBE - Boleto SICOOB - Unificado.PDF.pdf",
+       "link": "https://drive.google.com/file/d/1ntoGzVFmMILE5tk7VHxtWY1xk_3XQk19/view?usp=drivesdk",
+       "mod": "2026-10-03",
+       "tipo": "application/pdf"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
