@@ -92,14 +92,23 @@ nav.tabs button.on{color:var(--blue);background:var(--sky)}
   <div class="cards" id="cards"></div>
 
   <section class="tab on" id="t-painel">
-    <h2>Carga horária</h2>
+    <h2>Progresso do curso</h2>
     <div class="panel">
-      <div class="row"><span>Horas cumpridas</span><b id="p-h">—</b></div>
+      <div class="row"><span>Carga horária cumprida</span><b id="p-h">—</b></div>
       <div class="bar"><i id="p-bar" style="width:0%"></i></div>
       <div class="tagline" id="p-note"></div>
       <div class="row" style="margin-top:10px"><span>Componentes do curso</span><b id="p-comp">—</b></div>
       <div class="row"><span>Semestre</span><b id="p-sem">—</b></div>
       <div class="row"><span>Situação</span><b id="p-sit">—</b></div>
+    </div>
+
+    <h2>Portal do Aluno</h2>
+    <div class="panel">
+      <div class="row"><span>Etapa</span><b id="po-etapa">—</b></div>
+      <div class="row"><span>Notas</span><b id="po-notas">—</b></div>
+      <div class="row"><span>Faltas</span><b id="po-faltas">—</b></div>
+      <div class="row"><span>Calendário de aulas</span><b id="po-cal">—</b></div>
+      <div class="tagline" id="po-lido"></div>
     </div>
 
     <h2>Horas por disciplina · 1º período</h2>
@@ -195,24 +204,31 @@ function charts(D){
 function render(D){
   $('#kick').textContent=`${D.curso.instituicao} · ${D.curso.curso} · ${D.curso.semestre}`;
   $('#sub').textContent=`${D.curso.matriz} · ${D.curso.turno} · RA ${D.curso.ra}`;
-  const cumpr=D.carga.horasCumpridas||0, prev=D.carga.horasPrevistasPeriodo||D.carga.horasPeriodo||0;
-  const pct=Math.round(cumpr/D.carga.horasTotal*100);
+  const pct=Math.round(D.carga.horasPeriodo/D.carga.horasTotal*100);
   $('#cards').innerHTML=[
-    ['Previsto no 1º período',`${nf(prev)}<small>h</small>`,'5 disciplinas de 80 h'],
-    ['Horas cumpridas',`${nf(cumpr)}<small>h</small>`,`de ${nf(D.carga.horasTotal)} h no curso`],
+    ['Horas no 1º período',`${D.carga.horasPeriodo}<small>h</small>`,'5 disciplinas de 80 h'],
+    ['Curso completo',`${nf(D.carga.horasTotal)}<small>h</small>`,'10 períodos · 49 componentes'],
     ['Arquivos no Drive',nf(D.totalArquivos),`${D.totalPastas} pastas`],
     ['Agenda',D.agenda.length?nf(D.agenda.length):'0','próximos 90 dias'],
   ].map(([l,v,n])=>`<div class="card"><div class="lbl">${l}</div><div class="val">${v}</div><div class="note">${n}</div></div>`).join('');
 
-  $('#p-h').textContent=`${nf(cumpr)} de ${nf(D.carga.horasTotal)} h`;
+  $('#p-h').textContent=`${D.carga.horasPeriodo} de ${nf(D.carga.horasTotal)} h`;
   $('#p-bar').style.width=pct+'%';
-  $('#p-note').textContent=cumpr?`${pct}% da carga horária total. Faltam ${nf(D.carga.horasTotal-cumpr)} h.`:`O curso começa em ${D.carga.inicio}: nenhuma hora cumprida ainda. Os ${nf(prev)} h são a carga prevista do 1º período, não horas feitas.`;
+  $('#p-note').textContent=`${pct}% da carga horária total. Faltam ${nf(D.carga.horasTotal-D.carga.horasPeriodo)} h e 9 períodos.`;
   $('#p-comp').textContent=`${D.carga.componentes} em ${D.carga.periodos} períodos`;
   $('#p-sem').textContent=D.curso.semestre;
   $('#p-sit').textContent=D.curso.situacao;
 
+  const P=D.portal||{};
+  if($('#po-etapa')){
+    $('#po-etapa').textContent=P.etapa||D.curso.semestre;
+    $('#po-notas').textContent=P.notas||'—';
+    $('#po-faltas').textContent=P.faltas||'—';
+    $('#po-cal').textContent=P.calendario||'—';
+    $('#po-lido').textContent=P.lidoEm?('Lido no portal em '+P.lidoEm):'Ainda não lido no portal.';
+  }
   $('#tb-disc').innerHTML=D.disciplinas.map(d=>`<tr><td class="mut">${d.codigo}</td><td>${esc(d.nome)}</td><td class="num">${d.horas} h</td></tr>`).join('')
-    +`<tr><td></td><td><b>Total previsto</b></td><td class="num"><b>${nf(prev)} h</b></td></tr>`;
+    +`<tr><td></td><td><b>Total</b></td><td class="num"><b>${D.carga.horasPeriodo} h</b></td></tr>`;
 
   $('#tb-fin').innerHTML=D.financeiro.map(f=>`<tr><td>${esc(f.descricao)}</td><td class="num">${money(f.valor)}</td><td class="num">${dataBR(f.vencimento)}</td></tr>`).join('')
     || '<tr><td colspan="3" class="mut">Nada lançado.</td></tr>';
@@ -251,11 +267,7 @@ async function carregar(){
 }
 $('#recarregar').onclick=carregar;
 carregar();
-if('serviceWorker' in navigator){
-  addEventListener('load',()=>navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(r=>r.update()).catch(()=>{}));
-  let recarregou=false;
-  navigator.serviceWorker.addEventListener('controllerchange',()=>{if(!recarregou){recarregou=true;location.reload();}});
-}
+if('serviceWorker' in navigator){addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));}
 </script>
 </body>
 </html>
