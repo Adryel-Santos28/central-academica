@@ -7,8 +7,8 @@
 <meta name="theme-color" content="#0A0A0A">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="Central Acadêmica">
-<title>Central Acadêmica · Odontologia</title>
+<meta name="apple-mobile-web-app-title" content="Odontologia UNIFEB">
+<title>Odontologia · Central Acadêmica</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
 <link rel="shortcut icon" href="icon-192.png">
@@ -28,38 +28,36 @@
 }
 html,body{margin:0;padding:0;background:var(--ink)}
 body{color:var(--paper);font-family:var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.shell{overflow-x:clip}
 #fx{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.85}
 .shell{position:relative;z-index:1}
 .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 
-/* topo */
-header{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(10,10,10,.72);border-bottom:1px solid var(--line)}
+header{position:sticky;top:0;z-index:20;backdrop-filter:blur(14px);background:rgba(10,10,10,.74);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;gap:16px;padding:13px 0}
 .brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
 .brand img{width:30px;height:30px;display:block;border-radius:8px}
-.brand span{font-family:var(--disp);font-weight:500;font-size:15px;letter-spacing:-.01em;color:var(--paper)}
+.brand span{font-family:var(--disp);font-weight:500;font-size:14.5px;letter-spacing:-.01em}
 nav{display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;margin-left:auto}
 nav::-webkit-scrollbar{display:none}
-nav button{font-family:var(--body);font-size:12.5px;font-weight:500;white-space:nowrap;border:0;cursor:pointer;
-  padding:8px 14px;border-radius:999px;background:var(--paper);color:#111;transition:.18s}
+nav button{font-family:var(--body);font-size:12.5px;font-weight:500;white-space:nowrap;border:0;cursor:pointer;padding:8px 14px;border-radius:999px;background:var(--paper);color:#111;transition:.18s}
 nav button.on{background:var(--lime);color:#0A0A0A}
 nav button:not(.on):hover{background:#fff}
 
-/* hero */
-.hero{padding:44px 0 8px}
+.hero{padding:44px 0 8px;position:relative;overflow:hidden}
+.hero .mark-bg{position:absolute;right:-18px;top:6px;width:190px;height:190px;opacity:.07;pointer-events:none}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .sq{width:7px;height:7px;background:var(--lime);display:inline-block;border-radius:1px}
-h1{font-family:var(--disp);font-weight:500;font-size:clamp(38px,9.5vw,76px);line-height:.95;letter-spacing:-.035em;margin:18px 0 0}
+h1{font-family:var(--disp);font-weight:500;font-size:clamp(34px,9vw,68px);line-height:.97;letter-spacing:-.035em;margin:18px 0 0;position:relative}
 h1 em{font-style:normal;color:var(--lime)}
-.lede{font-size:14.5px;line-height:1.55;color:var(--muted);max-width:46ch;margin:16px 0 0}
-.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:34px}
+.lede{font-size:14px;line-height:1.55;color:var(--muted);max-width:48ch;margin:16px 0 0}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:32px}
 .stat{background:var(--ink);padding:20px 4px 20px 0}
 .stat .k{font-family:var(--mono);font-size:9.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
-.stat .v{font-family:var(--disp);font-weight:500;font-size:clamp(30px,7.5vw,46px);letter-spacing:-.04em;line-height:1;margin-top:8px}
+.stat .v{font-family:var(--disp);font-weight:500;font-size:clamp(28px,7.2vw,44px);letter-spacing:-.04em;line-height:1;margin-top:8px}
 .stat .v small{font-size:.36em;font-weight:500;color:var(--muted);margin-left:4px;letter-spacing:0}
 .stat .n{font-size:11.5px;color:var(--muted);margin-top:6px;line-height:1.35}
 
-/* seções */
 section.tab{display:none;padding-bottom:60px}
 section.tab.on{display:block}
 h2{font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);font-weight:400;margin:46px 0 14px;display:flex;align-items:center;gap:9px}
@@ -72,23 +70,31 @@ h2:before{content:"";width:7px;height:7px;background:var(--lime);border-radius:1
 .row .mut{color:var(--muted);font-size:12px}
 .bar{height:6px;background:rgba(242,237,230,.12);border-radius:99px;overflow:hidden;margin:14px 0 12px}
 .bar i{display:block;height:100%;background:var(--lime);border-radius:99px;transition:width .8s cubic-bezier(.2,.7,.2,1)}
-.tagline{font-size:12.5px;color:var(--muted);line-height:1.5;margin:0}
+.tagline{font-size:12.5px;color:var(--muted);line-height:1.55;margin:0}
+a.lk{color:var(--paper);text-decoration:none;border-bottom:1px solid rgba(209,255,112,.5);padding-bottom:1px}
+a.lk:hover{color:var(--lime)}
+
+/* períodos */
+.per{display:grid;grid-template-columns:repeat(5,1fr);gap:7px;margin-top:4px}
+.per div{border:1px solid var(--line);border-radius:9px;padding:10px 6px;text-align:center}
+.per div.now{border-color:var(--lime);background:rgba(209,255,112,.10)}
+.per b{display:block;font-family:var(--disp);font-size:15px;font-weight:500}
+.per span{font-family:var(--mono);font-size:8.5px;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+.per div.now span{color:var(--lime)}
 
 /* gráficos */
 .chart{display:flex;align-items:flex-end;gap:8px;height:150px;padding-top:10px}
 .chart .col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:6px;height:100%}
 .chart .bar2{width:100%;max-width:34px;background:linear-gradient(180deg,var(--lime),var(--lime-dim));border-radius:4px 4px 2px 2px;min-height:3px;transition:height .7s cubic-bezier(.2,.7,.2,1)}
 .chart .num{font-family:var(--mono);font-size:10px;color:var(--muted)}
-.chart .cap{font-family:var(--mono);font-size:9px;color:var(--muted);text-align:center;height:24px;overflow:hidden;line-height:1.15;letter-spacing:.02em}
+.chart .cap{font-family:var(--mono);font-size:9px;color:var(--muted);text-align:center;height:24px;overflow:hidden;line-height:1.15}
 
-/* tabela */
 table{width:100%;border-collapse:collapse;font-size:13.5px}
 th{text-align:left;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:400;padding:0 0 10px;border-bottom:1px solid var(--paper)}
 td{padding:12px 0;border-bottom:1px solid var(--line);vertical-align:top}
 td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap;padding-left:10px;font-family:var(--disp);font-weight:500}
 td.cod{font-family:var(--mono);font-size:11px;color:var(--muted)}
 
-/* arquivos */
 details{border:1px solid var(--line);border-radius:14px;margin-bottom:8px;background:var(--card);overflow:hidden}
 details[open]{border-color:rgba(209,255,112,.45);background:var(--card2)}
 summary{padding:15px 16px;font-size:13.5px;font-weight:500;cursor:pointer;display:flex;justify-content:space-between;gap:12px;align-items:center;list-style:none}
@@ -99,9 +105,15 @@ summary .cnt{font-family:var(--mono);font-size:10px;color:var(--muted);white-spa
 .files a:hover{color:var(--lime)}
 .files a span{color:var(--muted);font-family:var(--mono);font-size:10px;display:block;margin-top:3px}
 
-/* botões */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:15px;border-radius:999px;border:0;
-  background:var(--lime);color:#0A0A0A;font-family:var(--body);font-size:14px;font-weight:600;text-decoration:none;cursor:pointer;transition:.18s}
+/* checklist */
+.check{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid var(--line);cursor:pointer;font-size:13.5px;line-height:1.4}
+.check:last-child{border-bottom:0}
+.check input{appearance:none;width:19px;height:19px;flex:0 0 auto;border:1px solid rgba(242,237,230,.35);border-radius:5px;margin:1px 0 0;cursor:pointer;position:relative;transition:.15s}
+.check input:checked{background:var(--lime);border-color:var(--lime)}
+.check input:checked:after{content:"";position:absolute;left:6px;top:2px;width:5px;height:10px;border:solid #0A0A0A;border-width:0 2px 2px 0;transform:rotate(45deg)}
+.check input:checked+span{color:var(--muted);text-decoration:line-through}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;width:100%;padding:15px;border-radius:999px;border:0;background:var(--lime);color:#0A0A0A;font-family:var(--body);font-size:14px;font-weight:600;text-decoration:none;cursor:pointer;transition:.18s}
 .btn:hover{filter:brightness(1.06)}
 .btn.ghost{background:transparent;color:var(--paper);border:1px solid var(--line)}
 .btn.ghost:hover{border-color:var(--paper)}
@@ -110,18 +122,19 @@ summary .cnt{font-family:var(--mono);font-size:10px;color:var(--muted);white-spa
 .empty p{font-size:13px;color:var(--muted);line-height:1.55;margin:0 0 18px}
 .steps{counter-reset:s;list-style:none;padding:0;margin:0}
 .steps li{counter-increment:s;position:relative;padding:0 0 16px 36px;font-size:13px;line-height:1.5}
-.steps li:before{content:"0" counter(s);position:absolute;left:0;top:0;font-family:var(--mono);font-size:10px;color:var(--lime);letter-spacing:.05em}
+.steps li:before{content:"0" counter(s);position:absolute;left:0;top:0;font-family:var(--mono);font-size:10px;color:var(--lime)}
 .steps li b{display:block;font-family:var(--disp);font-weight:500;font-size:13.5px;margin-bottom:2px}
 .foot{margin:50px 0 0;padding-top:18px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);line-height:1.65}
-.pill{font-family:var(--mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--lime);border:1px solid rgba(209,255,112,.4);padding:4px 9px;border-radius:99px;display:inline-block}
 @media(max-width:719px){
   .bar{flex-wrap:wrap;gap:10px;padding-bottom:10px}
   nav{margin-left:0;width:100%;order:3}
   nav button{font-size:12px;padding:8px 13px}
+  .hero .mark-bg{width:130px;height:130px;top:-6px;right:-26px}
 }
 @media(min-width:720px){
   .stats{grid-template-columns:repeat(4,1fr)}
   .stat{padding:24px 18px 24px 0}
+  .per{grid-template-columns:repeat(10,1fr)}
   .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
 }
 @media(prefers-reduced-motion:reduce){#fx{display:none}.bar i,.chart .bar2{transition:none}}
@@ -131,20 +144,23 @@ summary .cnt{font-family:var(--mono);font-size:10px;color:var(--muted);white-spa
 <canvas id="fx" aria-hidden="true"></canvas>
 <div class="shell">
 <header><div class="wrap"><div class="bar">
-  <div class="brand"><img src="logo.svg" alt=""><span>central acadêmica</span></div>
+  <div class="brand"><img src="logo.svg" alt=""><span>odontologia · unifeb</span></div>
   <nav id="nav">
     <button data-tab="painel" class="on">Painel</button>
-    <button data-tab="disc">Disciplinas</button>
+    <button data-tab="matriz">Matriz</button>
+    <button data-tab="clinica">Clínica</button>
     <button data-tab="arq">Arquivos</button>
-    <button data-tab="fin">Financeiro</button>
     <button data-tab="ag">Agenda</button>
   </nav>
 </div></div></header>
 
 <div class="wrap">
   <div class="hero">
+    <svg class="mark-bg" viewBox="0 0 48 48" aria-hidden="true">
+      <path d="M24 9.4c-2.7 0-4.1 1.3-5.9 1.3-2.4 0-4.2 1.7-4.2 4.6 0 2.7 1 4.2 1.4 6.4.4 2.2.4 7 2.5 8.6 1.2.9 2.5-.2 2.8-2 .4-1.8.6-4.7 2.8-4.7s2.4 2.9 2.8 4.7c.4 1.8 1.6 2.9 2.8 2 2.1-1.6 2.1-6.4 2.5-8.6.4-2.2 1.4-3.7 1.4-6.4 0-2.9-1.8-4.6-4.2-4.6-1.8 0-3.2-1.3-5.9-1.3Z" fill="#F2EDE6"/>
+    </svg>
     <div class="eyebrow"><i class="sq"></i><span id="eyebrow">UNIFEB · Odontologia · 2027/1</span></div>
-    <h1>Quatro mil e<br>trezentas horas<br><em>pela frente.</em></h1>
+    <h1>Odontologia,<br>quatro mil e<br><em>trezentas horas.</em></h1>
     <p class="lede" id="lede">Carregando seus dados…</p>
     <div class="stats" id="stats"></div>
   </div>
@@ -156,10 +172,15 @@ summary .cnt{font-family:var(--mono);font-size:10px;color:var(--muted);white-spa
       <div class="bar"><i id="p-bar" style="width:0%"></i></div>
       <p class="tagline" id="p-note"></p>
       <div style="margin-top:14px">
-        <div class="row"><span>Componentes do curso</span><b id="p-comp">—</b></div>
+        <div class="row"><span>Componentes</span><b id="p-comp">—</b></div>
         <div class="row"><span>Semestre</span><b id="p-sem">—</b></div>
         <div class="row"><span>Situação</span><b id="p-sit">—</b></div>
       </div>
+    </div>
+
+    <h2>Os dez períodos</h2>
+    <div class="card"><div class="per" id="periodos"></div>
+      <p class="tagline" style="margin-top:14px" id="per-note"></p>
     </div>
 
     <h2>Portal do Aluno</h2>
@@ -171,6 +192,9 @@ summary .cnt{font-family:var(--mono);font-size:10px;color:var(--muted);white-spa
       <p class="tagline" id="po-lido" style="margin-top:12px"></p>
     </div>
 
+    <h2>Financeiro acadêmico</h2>
+    <div class="card"><table><thead><tr><th>Descrição</th><th class="num">Valor</th><th class="num">Vence</th></tr></thead><tbody id="tb-fin"></tbody></table></div>
+
     <h2>Horas por disciplina · 1º período</h2>
     <div class="card"><div class="chart" id="chart-disc"></div></div>
 
@@ -178,22 +202,55 @@ summary .cnt{font-family:var(--mono);font-size:10px;color:var(--muted);white-spa
     <div class="card"><div class="chart" id="chart-areas"></div><p class="tagline" id="areas-note" style="margin-top:12px"></p></div>
   </section>
 
-  <section class="tab" id="t-disc">
-    <h2>Disciplinas do 1º período</h2>
+  <section class="tab" id="t-matriz">
+    <h2>Matriz do curso</h2>
+    <div class="card">
+      <div class="row"><span>Curso</span><b>Odontologia</b></div>
+      <div class="row"><span>Matriz</span><b id="m-grade">—</b></div>
+      <div class="row"><span>Carga total</span><b id="m-total">—</b></div>
+      <div class="row"><span>Componentes</span><b id="m-comp">—</b></div>
+      <div class="row"><span>Turno</span><b id="m-turno">—</b></div>
+      <div class="row"><span>Ingresso</span><b id="m-ing">—</b></div>
+      <a class="btn ghost" style="margin-top:16px" href="https://drive.google.com/file/d/1kE1rTWoU_xfzsmLpGW0Lla9JvosmPNh7/view" target="_blank" rel="noopener">Abrir a matriz oficial em PDF</a>
+    </div>
+
+    <h2>1º período · o que você cursa em 2027/1</h2>
     <div class="card"><table><thead><tr><th>Código</th><th>Disciplina</th><th class="num">Horas</th></tr></thead><tbody id="tb-disc"></tbody></table></div>
-    <p class="tagline" style="margin-top:14px">Matriz oficial consultada no Portal do Aluno. Sem notas lançadas até agora.</p>
+    <p class="tagline" style="margin-top:14px">São cinco componentes de 80 h, 400 h no total. As disciplinas dos períodos seguintes estão na matriz oficial em PDF, e vão aparecer aqui conforme a faculdade publicar.</p>
+
+    <h2>Como ler a matriz</h2>
+    <div class="card">
+      <ol class="steps">
+        <li><b>Componente é a disciplina</b>Cada linha da matriz é um componente com código e carga horária própria.</li>
+        <li><b>Período é o semestre</b>São dez períodos no curso, do 1º ao 10º, e a clínica entra na grade conforme a matriz define.</li>
+        <li><b>Pré-requisito trava matrícula</b>Alguns componentes exigem outro antes. Confira na matriz antes de montar a matrícula do semestre.</li>
+        <li><b>Carga horária não é hora de relógio</b>As 4.320 h incluem aulas, laboratório, clínica e atividades complementares, conforme a matriz.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="tab" id="t-clinica">
+    <h2>Laboratório e clínica</h2>
+    <div id="clinica-pastas"></div>
+
+    <h2>Antes de entrar na clínica</h2>
+    <div class="card" id="kit"></div>
+    <p class="tagline" style="margin-top:12px">Checklist pessoal, que fica salvo neste aparelho. Ajuste conforme o protocolo da sua clínica e o que o professor pedir.</p>
+
+    <h2>Certificados e horas complementares</h2>
+    <div id="cert-pastas"></div>
+
+    <h2>Estágio e carreira</h2>
+    <div id="estagio-pastas"></div>
+
+    <h2>Biblioteca de odontologia</h2>
+    <div id="bib-pastas"></div>
   </section>
 
   <section class="tab" id="t-arq">
-    <h2>Pastas no seu Drive</h2>
-    <p class="tagline" style="margin-bottom:16px">Toque em uma pasta para abrir os arquivos. Os links levam ao seu Google Drive, então só você vê.</p>
+    <h2>Todas as pastas do Drive</h2>
+    <p class="tagline" style="margin-bottom:16px">Toque para abrir os arquivos. Os links levam ao seu Google Drive, então só você vê.</p>
     <div id="pastas"></div>
-  </section>
-
-  <section class="tab" id="t-fin">
-    <h2>Financeiro acadêmico</h2>
-    <div class="card"><table><thead><tr><th>Descrição</th><th class="num">Valor</th><th class="num">Vence</th></tr></thead><tbody id="tb-fin"></tbody></table></div>
-    <p class="tagline" style="margin-top:14px">Conferido no boleto guardado na pasta 10 — Financeiro Acadêmico.</p>
   </section>
 
   <section class="tab" id="t-ag">
@@ -205,16 +262,15 @@ summary .cnt{font-family:var(--mono);font-size:10px;color:var(--muted);white-spa
       <a class="btn" href="https://calendar.google.com/calendar/u/0/r/eventedit" target="_blank" rel="noopener">Criar compromisso</a>
       <a class="btn ghost" style="margin-top:9px" href="https://calendar.google.com/calendar/u/0/r" target="_blank" rel="noopener">Abrir minha agenda</a>
     </div>
-    <h2>Como marcar cada tipo</h2>
+    <h2>Como marcar na rotina de odontologia</h2>
     <div class="card">
       <ol class="steps">
-        <li><b>Prova e trabalho</b>Nome da disciplina no título, com lembretes de 3 dias e de 1 dia antes.</li>
-        <li><b>Clínica e laboratório</b>Endereço no local e o roteiro do procedimento na descrição.</li>
+        <li><b>Aula prática e laboratório</b>Nome da disciplina no título, sala no local e o roteiro do procedimento na descrição.</li>
+        <li><b>Clínica com paciente</b>Evento com o nome do paciente na descrição, nunca no título, e um lembrete na véspera para confirmar.</li>
+        <li><b>Prova teórica e prática</b>Lembretes de 3 dias e de 1 dia antes, com o conteúdo da revisão na descrição.</li>
         <li><b>Estágio e plantão</b>Um evento por turno, com o supervisor na descrição, para contar horas no fim do semestre.</li>
-        <li><b>Consulta e dentista</b>Evento separado, com o telefone da clínica na descrição.</li>
-        <li><b>Prazo de boleto</b>Evento de dia inteiro, com lembretes de 5 dias e de 1 dia.</li>
+        <li><b>Boleto e matrícula</b>Evento de dia inteiro, com lembretes de 5 dias e de 1 dia.</li>
       </ol>
-      <p class="tagline" style="margin-top:6px">Se preferir, me diga o compromisso no WhatsApp que eu crio no seu Google Calendar.</p>
     </div>
   </section>
 
@@ -240,6 +296,16 @@ $('#nav').addEventListener('click',e=>{
   window.scrollTo({top:0,behavior:'smooth'});
 });
 
+const KIT=['Jaleco de manga longa, limpo','Luvas, máscara, gorro e óculos de proteção','Instrumental esterilizado e identificado','Ficha de anamnese do paciente preenchida','Radiografias e exames anexados ao caso','Termo de consentimento assinado','Gaze, álcool 70 e descarpack na bancada','Horário do paciente confirmado na véspera'];
+
+function pastasDe(prefixo,D){
+  const p=(D.pastasDrive||[]).find(x=>x.nome.slice(0,2)===prefixo);
+  if(!p) return '<p class="tagline">Pasta não encontrada no Drive.</p>';
+  const subs=(p.subpastas||[]).map(s=>`<a href="${s.link||'#'}" target="_blank" rel="noopener">${esc(s.nome)}<span>${s.arquivos.length} arquivo(s)</span></a>`).join('');
+  const files=(p.arquivos||[]).map(f=>`<a href="${f.link||'#'}" target="_blank" rel="noopener">${esc(f.nome)}<span>${f.mod||''}</span></a>`).join('');
+  return `<details open><summary><span>${esc(p.nome)}</span><span class="cnt">${(p.arquivos||[]).length+(p.subpastas||[]).reduce((a,s)=>a+s.arquivos.length,0)} arq.</span></summary><div class="files">${subs}${files}</div></details>`;
+}
+
 function charts(D){
   const ds=D.disciplinas||[], maxD=Math.max(1,...ds.map(d=>d.horas));
   $('#chart-disc').innerHTML=ds.map(d=>`<div class="col"><div class="num">${d.horas}</div>
@@ -257,21 +323,28 @@ function render(D){
   const C=D.carga||{}, cumpr=C.horasCumpridas||0, prev=C.horasPrevistasPeriodo||C.horasPeriodo||0;
   const pct=Math.round(cumpr/C.horasTotal*100);
   $('#eyebrow').textContent=`${D.curso.instituicao} · ${D.curso.curso} · ${D.curso.semestre}`;
-  $('#lede').textContent=`${D.curso.matriz}, turno ${D.curso.turno.toLowerCase()}, RA ${D.curso.ra}. O curso começa em ${C.inicio||'2027/1'}: por enquanto o que existe é a carga prevista, não horas feitas.`;
+  $('#lede').textContent=`${D.curso.matriz}, turno ${D.curso.turno.toLowerCase()}, RA ${D.curso.ra}. O curso começa em ${C.inicio||'2027/1'}: o que existe hoje é a carga prevista, não horas cumpridas.`;
   $('#stats').innerHTML=[
-    [ 'Previsto no 1º período', `${nf(prev)}<small>h</small>`, '5 disciplinas de 80 h' ],
-    [ 'Horas cumpridas', `${nf(cumpr)}<small>h</small>`, `de ${nf(C.horasTotal)} h no curso` ],
-    [ 'Arquivos no Drive', nf(D.totalArquivos), `${nf(D.totalPastas)} pastas` ],
-    [ 'Na agenda', nf((D.agenda||[]).length), 'próximos 90 dias' ]
+    ['Previsto no 1º período',`${nf(prev)}<small>h</small>`,'5 componentes de 80 h'],
+    ['Horas cumpridas',`${nf(cumpr)}<small>h</small>`,`de ${nf(C.horasTotal)} h no curso`],
+    ['Clínica e laboratório',nf(((D.pastasDrive||[]).find(p=>p.nome.slice(0,2)==='06')||{}).subpastas?.length||0),'pastas de prática'],
+    ['Na agenda',nf((D.agenda||[]).length),'próximos 90 dias']
   ].map(([k,v,n])=>`<div class="stat"><div class="k">${k}</div><div class="v">${v}</div><div class="n">${n}</div></div>`).join('');
 
   $('#p-h').textContent=`${nf(cumpr)} de ${nf(C.horasTotal)} h`;
   $('#p-bar').style.width=pct+'%';
   $('#p-note').textContent=cumpr?`${pct}% da carga total. Faltam ${nf(C.horasTotal-cumpr)} h.`
-    :`Nenhuma hora cumprida ainda. Os ${nf(prev)} h são a carga prevista do 1º período.`;
+    :`Nenhuma hora cumprida ainda. As ${nf(prev)} h são a carga prevista do 1º período.`;
   $('#p-comp').textContent=`${C.componentes} em ${C.periodos} períodos`;
   $('#p-sem').textContent=D.curso.semestre;
   $('#p-sit').textContent=D.curso.situacao;
+
+  const total=C.periodos||10;
+  $('#periodos').innerHTML=Array.from({length:total},(_,i)=>{
+    const n=i+1, atual=n===1;
+    return `<div class="${atual?'now':''}"><b>${n}º</b><span>${atual?'atual':'previsto'}</span></div>`;
+  }).join('');
+  $('#per-note').textContent=`Você está no 1º de ${total} períodos. Nenhum concluído até agora.`;
 
   const P=D.portal||{};
   $('#po-etapa').textContent=P.etapa||D.curso.semestre;
@@ -280,11 +353,24 @@ function render(D){
   $('#po-cal').textContent=P.calendario||'—';
   $('#po-lido').textContent=P.lidoEm?('Lido no portal em '+P.lidoEm):'Ainda não lido no portal.';
 
+  $('#m-grade').textContent=D.curso.matriz;
+  $('#m-total').textContent=`${nf(C.horasTotal)} h`;
+  $('#m-comp').textContent=C.componentes;
+  $('#m-turno').textContent=D.curso.turno;
+  $('#m-ing').textContent=D.curso.ingresso;
+
   $('#tb-disc').innerHTML=(D.disciplinas||[]).map(d=>`<tr><td class="cod">${d.codigo}</td><td>${esc(d.nome)}</td><td class="num">${d.horas} h</td></tr>`).join('')
     +`<tr><td></td><td><b>Total previsto</b></td><td class="num">${nf(prev)} h</td></tr>`;
 
   $('#tb-fin').innerHTML=(D.financeiro||[]).map(f=>`<tr><td>${esc(f.descricao)}</td><td class="num">${money(f.valor)}</td><td class="num">${dataBR(f.vencimento)}</td></tr>`).join('')
     ||'<tr><td colspan="3" class="tagline">Nada lançado.</td></tr>';
+
+  $('#clinica-pastas').innerHTML=pastasDe('06',D);
+  $('#cert-pastas').innerHTML=pastasDe('07',D);
+  $('#estagio-pastas').innerHTML=pastasDe('08',D);
+  $('#bib-pastas').innerHTML=pastasDe('05',D);
+
+  $('#kit').innerHTML=KIT.map((t,i)=>`<label class="check"><input type="checkbox" data-k="${i}"><span>${esc(t)}</span></label>`).join('');
 
   $('#pastas').innerHTML=(D.pastasDrive||[]).map(p=>{
     const subs=(p.subpastas||[]).map(s=>`<a href="${s.link||'#'}" target="_blank" rel="noopener">${esc(s.nome)}<span>${s.arquivos.length} arquivo(s)</span></a>`).join('');
@@ -304,12 +390,21 @@ function render(D){
     }).join('');
   } else {
     $('#agenda-box').innerHTML=`<div class="empty"><div class="big">Nada marcado nos próximos 90 dias</div>
-      <p>Assim que você criar um evento no Google Calendar, ele aparece aqui. Ainda não há prova, estágio ou boleto na agenda.</p>
+      <p>Assim que você criar um evento no Google Calendar, ele aparece aqui. Ainda não há aula prática, prova ou boleto na agenda.</p>
       <a class="btn" href="https://calendar.google.com/calendar/u/0/r/eventedit" target="_blank" rel="noopener">Criar o primeiro compromisso</a></div>`;
   }
 
   $('#atualizado').textContent='Atualizado em '+D.atualizadoEm;
   charts(D);
+  ligarKit();
+}
+
+function ligarKit(){
+  const chaves=[...document.querySelectorAll('#kit input')];
+  chaves.forEach(c=>{
+    if(localStorage.getItem('kit-'+c.dataset.k)==='1') c.checked=true;
+    c.addEventListener('change',()=>localStorage.setItem('kit-'+c.dataset.k,c.checked?'1':'0'));
+  });
 }
 
 async function carregar(){
@@ -321,7 +416,6 @@ async function carregar(){
 $('#recarregar').onclick=carregar;
 carregar();
 
-/* linhas em movimento, no espírito do site de referência */
 (function(){
   const cv=document.getElementById('fx');
   if(!cv||matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -334,12 +428,9 @@ carregar();
     const n=Math.min(220,Math.max(70,Math.round(w*h/9000)));
     parts=Array.from({length:n},()=>({x:Math.random()*w,y:Math.random()*h,a:Math.random()*Math.PI*2,s:.35+Math.random()*.7,l:10+Math.random()*26}));
   }
-  function field(x,y,t){
-    return Math.sin((x*.0045)+(y*.0031)+t*.00016)*1.7 + Math.cos((x*.0021)-(y*.0057)-t*.00011)*1.2;
-  }
+  function field(x,y,t){ return Math.sin((x*.0045)+(y*.0031)+t*.00016)*1.7 + Math.cos((x*.0021)-(y*.0057)-t*.00011)*1.2; }
   function draw(t){
-    ctx.clearRect(0,0,w,h);
-    ctx.lineWidth=.8;
+    ctx.clearRect(0,0,w,h); ctx.lineWidth=.8;
     for(const p of parts){
       const ang=field(p.x,p.y,t)+p.a*.05;
       const nx=p.x+Math.cos(ang)*p.s*2.2, ny=p.y+Math.sin(ang)*p.s*2.2;
