@@ -135,6 +135,9 @@ nav.tabs button:active{transform:scale(.96)}
       <div class="tagline" id="po-lido"></div>
     </div>
 
+    <h2>Pagamentos pendentes</h2>
+    <div class="panel" id="pagamentos"></div>
+
     <h2>Horas por disciplina · 1º período</h2>
     <div class="panel"><div class="chart" id="chart-disc"></div></div>
 
@@ -318,6 +321,28 @@ function render(D){
         ${lista?`<div style="margin-top:8px">${lista}</div>`:''}
       </div>`;
     }).join('');
+  }
+
+  if($('#pagamentos')){
+    const hoje=new Date(); hoje.setHours(0,0,0,0);
+    const lista=(D.pagamentos||[]);
+    const pend=lista.filter(p=>p.status==='pendente');
+    const outros=lista.filter(p=>p.status!=='pendente');
+    const dias=iso=>Math.round((new Date(iso+'T00:00:00')-hoje)/86400000);
+    const linha=p=>{
+      let situacao='';
+      if(p.status==='pendente'){
+        const n=p.vencimento?dias(p.vencimento):null;
+        situacao=n===null?'':(n<0?`vencido há ${Math.abs(n)} dia${Math.abs(n)===1?'':'s'}`:(n===0?'vence hoje':`vence em ${n} dia${n===1?'':'s'}`));
+      } else situacao=p.pagoEm?('pago em '+dataBR(p.pagoEm)):p.status;
+      const cor=p.status==='pendente'?'#b3261e':'#1f7a45';
+      return `<div class="row"><span>${esc(p.descricao)}<span class="mut"><br>${esc(p.obs||'')}</span></span>
+        <b>${money(p.valor)}<br><span class="mut" style="color:${cor};font-weight:600">${esc(situacao)}</span></b></div>`;
+    };
+    $('#pagamentos').innerHTML =
+      (pend.length? pend.map(linha).join('') : '<div class="tagline" style="padding:6px 0">Nenhum pagamento pendente conhecido.</div>')
+      + (outros.length? `<div class="tagline" style="margin-top:14px">Últimos pagamentos</div>`+outros.map(linha).join('') : '')
+      + `<a class="btn ghost" style="margin-top:14px" href="${(D.financeiroPastas&&D.financeiroPastas.comprovantes&&D.financeiroPastas.comprovantes.link)||'#'}" target="_blank" rel="noopener">Subir comprovante de pagamento</a>`;
   }
 
   const FP=D.financeiroPastas||{};
