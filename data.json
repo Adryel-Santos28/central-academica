@@ -1161,5 +1161,44 @@
   "faltas": "Nenhuma falta registrada",
   "desempenho": "Sem dados para o gráfico",
   "calendario": "Sem eventos de aula publicados"
+ },
+ "financeiroPastas": {
+  "pastaPrincipal": {
+   "link": "https://drive.google.com/drive/folders/1-QGSZLcvrXLHanM72_61jsUNYmNKmtRw",
+   "nome": "10 — FINANCEIRO ACADÊMICO"
+  },
+  "comprovantes": {
+   "link": "https://drive.google.com/drive/folders/1CDo2yaUkh74DWLvu_Mw7UWsep89A_qVX",
+   "arquivos": [
+    {
+     "nome": "Atalho — pasta Pagamentos (boleto SICOOB de 02/10/2026)",
+     "link": "https://drive.google.com/file/d/15K027-j_vIUVFX70rC4c3EWt4mbyGWZi/view?usp=drivesdk",
+     "mod": "2026-11-13"
+    }
+   ]
+  },
+  "mensalidades": {
+   "link": "https://drive.google.com/drive/folders/1vx3936Wc-b7yuwsDqqff73cnSrcw3IQ8",
+   "arquivos": [
+    {
+     "nome": "Atalho — PAINEL DE HORAS E TRAJETÓRIA",
+     "link": "https://drive.google.com/file/d/1oMvzk0VOlbGpAtiEIu2phlXfh3kHOSjq/view?usp=drivesdk",
+     "mod": "2026-11-13"
+    },
+    {
+     "nome": "UNIFAFIBE — Boleto SICOOB 41247370 — 02-10-2026.pdf",
+     "link": "https://drive.google.com/file/d/1CVoIF_OzWycsrI5TTKAavBbR46Ubr6WE/view?usp=drivesdk",
+     "mod": "2026-11-13"
+    }
+   ]
+  },
+  "bolsas": {
+   "link": "https://drive.google.com/drive/folders/1NRofGPJIMNaweEOSIonP1X41eJtC21vL",
+   "arquivos": []
+  },
+  "planejamento": {
+   "link": "https://drive.google.com/drive/folders/14y1lvZqiqt_jCn-GOEJAMP09VsRNDHFf",
+   "arquivos": []
+  }
  }
 }
