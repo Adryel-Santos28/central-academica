@@ -137,6 +137,8 @@ nav.tabs button:active{transform:scale(.96)}
 
     <h2>Pagamentos pendentes</h2>
     <div class="panel" id="pagamentos"></div>
+    <h2>Documentos pendentes na matrícula</h2>
+    <div class="panel" id="pend-doc"></div>
 
     <h2>Horas por disciplina · 1º período</h2>
     <div class="panel"><div class="chart" id="chart-disc"></div></div>
@@ -325,25 +327,43 @@ function render(D){
 
   if($('#pagamentos')){
     const hoje=new Date(); hoje.setHours(0,0,0,0);
-    const lista=(D.pagamentos||[]);
-    const pend=lista.filter(p=>p.status==='pendente');
-    const outros=lista.filter(p=>p.status!=='pendente');
     const dias=iso=>Math.round((new Date(iso+'T00:00:00')-hoje)/86400000);
+    const quintoUtil=iso=>{const [a,m]=iso.split('-').map(Number);let d=new Date(a,m-1,1),n=0;
+      while(true){const w=d.getDay();if(w!==0&&w!==6){n++;if(n===5)break;}d.setDate(d.getDate()+1);}return d;};
+    const fmt=d=>d.toLocaleDateString('pt-BR',{day:'2-digit',month:'2-digit'});
+    const parc=D.parcelas||[];
+    const M=D.mensalidade||{};
+    const prox=parc.find(p=>p.status!=='pago');
+    let topo='';
+    if(prox){
+      const lim=quintoUtil(prox.vencimento), nl=Math.round((lim-hoje)/86400000);
+      topo=`<div class="row"><span><b>Próxima parcela</b><span class="mut"><br>${esc(prox.descricao)} · vence ${dataBR(prox.vencimento)}</span></span>
+        <b>${money(M.valorComDesconto||prox.valorComDesconto)}<br><span class="mut" style="color:#1f7a45;font-weight:600">${nl>=0?`desconto até ${fmt(lim)} (${nl} dia${nl===1?'':'s'})`:'prazo do desconto encerrado'}</span></b></div>`;
+    } else topo='<div class="tagline" style="padding:6px 0">Todas as parcelas estão pagas.</div>';
     const linha=p=>{
-      let situacao='';
-      if(p.status==='pendente'){
-        const n=p.vencimento?dias(p.vencimento):null;
-        situacao=n===null?'':(n<0?`vencido há ${Math.abs(n)} dia${Math.abs(n)===1?'':'s'}`:(n===0?'vence hoje':`vence em ${n} dia${n===1?'':'s'}`));
-      } else situacao=p.pagoEm?('pago em '+dataBR(p.pagoEm)):p.status;
-      const cor=p.status==='pendente'?'#b3261e':'#1f7a45';
-      return `<div class="row"><span>${esc(p.descricao)}<span class="mut"><br>${esc(p.obs||'')}</span></span>
-        <b>${money(p.valor)}<br><span class="mut" style="color:${cor};font-weight:600">${esc(situacao)}</span></b></div>`;
+      let sit,cor;
+      if(p.status==='pago'){sit='pago em '+dataBR(p.pagoEm);cor='#1f7a45';}
+      else{const n=dias(p.vencimento);sit=n<0?`venceu há ${Math.abs(n)} dias`:`vence em ${n} dias`;cor=n<0?'#b3261e':'#5b6b82';}
+      const val=p.status==='pago'?p.valorPago:(M.valorComDesconto||p.valorComDesconto);
+      return `<div class="row"><span>${esc(p.descricao)}<span class="mut"><br>vencimento ${dataBR(p.vencimento)}${p.obs?' · '+esc(p.obs):''}</span></span>
+        <b>${money(val)}<br><span class="mut" style="color:${cor};font-weight:600">${esc(sit)}</span></b></div>`;
     };
-    $('#pagamentos').innerHTML =
-      (pend.length? pend.map(linha).join('') : '<div class="tagline" style="padding:6px 0">Nenhum pagamento pendente conhecido.</div>')
-      + (outros.length? `<div class="tagline" style="margin-top:14px">Últimos pagamentos</div>`+outros.map(linha).join('') : '')
-      + (D.mensalidade? `<p class="tagline" style="margin-top:12px">Mensalidade: ${money(D.mensalidade.valorComDesconto)} pagando até o 5º dia útil. Depois do prazo, ${money(D.mensalidade.valorCheio)}.</p>`:'')
+    const pagas=parc.filter(p=>p.status==='pago').length;
+    $('#pagamentos').innerHTML = topo
+      + `<div class="tagline" style="margin-top:14px">Plano de pagamento · ${pagas} de ${parc.length} pagas</div>`
+      + parc.map(linha).join('')
+      + (M.valorCheio? `<p class="tagline" style="margin-top:12px">Regra: ${money(M.valorComDesconto)} pagando até o 5º dia útil de cada mês. Depois do prazo, ${money(M.valorCheio)}.</p>`:'')
       + `<a class="btn ghost" style="margin-top:14px" href="${(D.financeiroPastas&&D.financeiroPastas.comprovantes&&D.financeiroPastas.comprovantes.link)||'#'}" target="_blank" rel="noopener">Subir comprovante de pagamento</a>`;
+  }
+
+
+  if($('#pend-doc')){
+    const hj=new Date(); hj.setHours(0,0,0,0);
+    const pd=(D.contrato&&D.contrato.pendencias)||[];
+    $('#pend-doc').innerHTML = pd.length? pd.map(p=>{const n=Math.round((new Date(p.prazo+'T00:00:00')-hj)/86400000);
+      return `<div class="row"><span>${esc(p.item)}<span class="mut"><br>prazo de entrega ${dataBR(p.prazo)}</span></span><b><span style="color:${n<0?'#b3261e':'#5b6b82'};font-weight:600">${n<0?`atrasado ${Math.abs(n)} dias`:`faltam ${n} dias`}</span></b></div>`;}).join('')
+      + `<div class="tagline">Anotado na conferência de 26/10/2026: entregar na secretaria da UNIFEB em 10 dias.</div>`
+      : '<div class="tagline">Nenhum documento pendente.</div>';
   }
 
   const FP=D.financeiroPastas||{};
