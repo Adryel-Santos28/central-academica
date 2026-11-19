@@ -1200,5 +1200,67 @@
    "link": "https://drive.google.com/drive/folders/14y1lvZqiqt_jCn-GOEJAMP09VsRNDHFf",
    "arquivos": []
   }
- }
+ },
+ "comprovantesCategorias": [
+  {
+   "chave": "pagamento",
+   "titulo": "Comprovante de pagamento",
+   "oque": "Mensalidade, matrícula, taxa de disciplina ou boleto avulso.",
+   "link": "https://drive.google.com/drive/folders/1CDo2yaUkh74DWLvu_Mw7UWsep89A_qVX",
+   "pasta": "02 — COMPROVANTES DE PAGAMENTO",
+   "arquivos": [
+    {
+     "nome": "Atalho — pasta Pagamentos (boleto SICOOB de 02/10/2026)",
+     "link": "https://drive.google.com/file/d/15K027-j_vIUVFX70rC4c3EWt4mbyGWZi/view?usp=drivesdk",
+     "mod": "2026-11-13"
+    }
+   ]
+  },
+  {
+   "chave": "horas",
+   "titulo": "Comprovante de horas",
+   "oque": "Estágio, plantão, atividades complementares, monitoria e projetos.",
+   "link": "https://drive.google.com/drive/folders/1BOFCXpQg3KAkIvrCfjG8m-wuiRUXODeZ",
+   "pasta": "04 — COMPROVANTES",
+   "arquivos": []
+  },
+  {
+   "chave": "certificado",
+   "titulo": "Certificado de evento",
+   "oque": "Congresso, palestra, curso e workshop, com a carga horária visível.",
+   "link": "https://drive.google.com/drive/folders/1uodwQuyTP9Kip_t528vJU4fIdBtfaHlr",
+   "pasta": "04 — Certificados",
+   "arquivos": []
+  },
+  {
+   "chave": "pratica",
+   "titulo": "Relatório de prática",
+   "oque": "Laboratório e clínica: relatório assinado, ficha do paciente e avaliação prática.",
+   "link": "https://drive.google.com/drive/folders/1U57qaJiIUgpPDn4wF_OLMDFc-l3KsaSr",
+   "pasta": "07 — Relatórios de Práticas",
+   "arquivos": []
+  },
+  {
+   "chave": "matricula",
+   "titulo": "Documento de matrícula",
+   "oque": "Contrato assinado, comprovante de matrícula e declaração da faculdade.",
+   "link": "https://drive.google.com/drive/folders/1rkRmaRhMNjMg6Ff958nju_Yxy_6LWmeg",
+   "pasta": "03 — CONTRATO E COMPROVANTES",
+   "arquivos": []
+  },
+  {
+   "chave": "conclusao",
+   "titulo": "Comprovante de conclusão",
+   "oque": "Histórico, certificado de conclusão e declaração de semestre encerrado.",
+   "link": "https://drive.google.com/drive/folders/1QAldpeit4QUYuTo0CYSjeRrRNVoi5Van",
+   "pasta": "04 — ESTRUTURAS ANTIGAS",
+   "arquivos": [
+    {
+     "nome": "PAINEL ACADÊMICO — versão original de 29/10 (substituída)",
+     "link": "https://docs.google.com/document/d/1yEtvGIrgurcewa-16DYkZg2zbwIftj3a9Yz1EUT0HKA/edit?usp=drivesdk",
+     "mod": "2026-11-13"
+    }
+   ]
+  }
+ ]
 }
