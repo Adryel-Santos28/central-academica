@@ -1,5 +1,5 @@
 {
- "atualizadoEm": "19/11/2026 16:30",
+ "atualizadoEm": "19/11/2026 18:30",
  "curso": {
   "instituicao": "UNIFEB",
   "curso": "Odontologia",
@@ -1164,7 +1164,14 @@
      "nome": "02 — COMPROVANTES DE PAGAMENTO",
      "id": "1CDo2yaUkh74DWLvu_Mw7UWsep89A_qVX",
      "link": "https://drive.google.com/drive/folders/1CDo2yaUkh74DWLvu_Mw7UWsep89A_qVX",
-     "arquivos": []
+     "arquivos": [
+      {
+       "nome": "Recibo UNIFEB — mensalidade jan-2027 — R$ 1.102,40 — pago em 26-10-2026 (Getnet crédito).pdf",
+       "link": "https://drive.google.com/file/d/1aaxrcmavFfCc0HiaUupZYxcvTY2LNM4V/view?usp=drivesdk",
+       "mod": "2026-11-19",
+       "tipo": "application/pdf"
+      }
+     ]
     },
     {
      "nome": "03 — BOLSAS E DESCONTOS",
@@ -1237,7 +1244,13 @@
   },
   "comprovantes": {
    "link": "https://drive.google.com/drive/folders/1CDo2yaUkh74DWLvu_Mw7UWsep89A_qVX",
-   "arquivos": []
+   "arquivos": [
+    {
+     "nome": "Recibo UNIFEB — mensalidade jan-2027 — R$ 1.102,40 — pago em 26-10-2026 (Getnet crédito).pdf",
+     "link": "https://drive.google.com/file/d/1aaxrcmavFfCc0HiaUupZYxcvTY2LNM4V/view?usp=drivesdk",
+     "mod": "2026-11-19"
+    }
+   ]
   },
   "mensalidades": {
    "link": "https://drive.google.com/drive/folders/1vx3936Wc-b7yuwsDqqff73cnSrcw3IQ8",
@@ -1267,9 +1280,9 @@
    "pasta": "02 — COMPROVANTES DE PAGAMENTO",
    "arquivos": [
     {
-     "nome": "Atalho — pasta Pagamentos (boleto SICOOB de 02/10/2026)",
-     "link": "https://drive.google.com/file/d/15K027-j_vIUVFX70rC4c3EWt4mbyGWZi/view?usp=drivesdk",
-     "mod": "2026-11-13"
+     "nome": "Recibo UNIFEB — mensalidade jan-2027 — R$ 1.102,40 — pago em 26-10-2026 (Getnet crédito).pdf",
+     "link": "https://drive.google.com/file/d/1aaxrcmavFfCc0HiaUupZYxcvTY2LNM4V/view?usp=drivesdk",
+     "mod": "2026-11-19"
     }
    ]
   },
@@ -1322,14 +1335,15 @@
  ],
  "pagamentos": [
   {
-   "descricao": "Parcela 1 — mensalidade adiantada",
+   "descricao": "Mensalidade de janeiro de 2027 — paga adiantada",
    "valor": 1102.4,
-   "vencimento": null,
+   "vencimento": "2026-11-26",
    "pagoEm": "2026-10-26",
    "status": "pago",
-   "obs": "Pago adiantado em 26/10/2026, com desconto por antecipação. A mensalidade cheia é R$ 1.696,00 e com os 30% fica R$ 1.187,20.",
+   "obs": "Recibo UNIFEB de R$ 1.102,40, vencimento original 26/11/2026, pago em 26/10/2026 no crédito (Getnet). Comprovante guardado no Drive.",
    "pasta": "02 — COMPROVANTES DE PAGAMENTO",
-   "valorCheio": 1696.0
+   "valorCheio": 1696.0,
+   "comprovante": true
   }
  ],
  "mensalidade": {
