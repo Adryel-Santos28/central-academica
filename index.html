@@ -342,8 +342,7 @@ function render(D){
     $('#pagamentos').innerHTML =
       (pend.length? pend.map(linha).join('') : '<div class="tagline" style="padding:6px 0">Nenhum pagamento pendente conhecido.</div>')
       + (outros.length? `<div class="tagline" style="margin-top:14px">Últimos pagamentos</div>`+outros.map(linha).join('') : '')
-      + (D.mensalidade? `<div class="row" style="margin-top:6px"><span>Mensalidade com desconto<span class="mut"><br>${esc(D.mensalidade.regra||'')}</span></span><b>${money(D.mensalidade.valorComDesconto)}</b></div>`
-        + `<div class="row"><span>Mensalidade cheia<span class="mut"><br>Se pagar depois do 5º dia útil</span></span><b>${money(D.mensalidade.valorCheio)}</b></div>`:'')
+      + (D.mensalidade? `<p class="tagline" style="margin-top:12px">Mensalidade: ${money(D.mensalidade.valorComDesconto)} pagando até o 5º dia útil. Depois do prazo, ${money(D.mensalidade.valorCheio)}.</p>`:'')
       + `<a class="btn ghost" style="margin-top:14px" href="${(D.financeiroPastas&&D.financeiroPastas.comprovantes&&D.financeiroPastas.comprovantes.link)||'#'}" target="_blank" rel="noopener">Subir comprovante de pagamento</a>`;
   }
 
