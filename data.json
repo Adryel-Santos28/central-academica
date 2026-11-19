@@ -1265,20 +1265,12 @@
  ],
  "pagamentos": [
   {
-   "descricao": "Parcela 1 — boleto SICOOB 41247370",
-   "valor": 970.6,
-   "vencimento": "2026-10-05",
-   "status": "pendente",
-   "obs": "O boleto está no Drive, mas não há comprovante de pagamento guardado.",
-   "pasta": "02 — COMPROVANTES DE PAGAMENTO"
-  },
-  {
-   "descricao": "Mensalidade janeiro 2027",
+   "descricao": "Parcela 1 — mensalidade adiantada",
    "valor": 1102.4,
-   "vencimento": null,
+   "vencimento": "2026-10-05",
    "pagoEm": "2026-10-26",
-   "status": "pago sem comprovante",
-   "obs": "Pagamento no crédito pela Getnet. Falta guardar o comprovante em PDF.",
+   "status": "pago",
+   "obs": "Pago adiantado em 26/10/2026 com 30% de desconto. O boleto emitido era de R$ 970,60.",
    "pasta": "02 — COMPROVANTES DE PAGAMENTO"
   }
  ]
