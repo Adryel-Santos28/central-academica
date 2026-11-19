@@ -1,5 +1,5 @@
 {
- "atualizadoEm": "19/11/2026 00:56",
+ "atualizadoEm": "19/11/2026 16:30",
  "curso": {
   "instituicao": "UNIFEB",
   "curso": "Odontologia",
@@ -49,7 +49,7 @@
  "areas": [
   {
    "nome": "00 — CENTRAL ACADÊMICA",
-   "arquivos": 10,
+   "arquivos": 11,
    "subpastas": 8,
    "link": "https://drive.google.com/drive/folders/1XlVO3ZAezJC59w5T07H2mXWr4Cf42CQH",
    "pastas": [
@@ -97,7 +97,7 @@
   },
   {
    "nome": "01 — MATRÍCULA E DOCUMENTOS",
-   "arquivos": 2,
+   "arquivos": 3,
    "subpastas": 6,
    "link": "https://drive.google.com/drive/folders/1e2zTcpcJrlPfytuCyUgE5JmCT9G2B_Ss",
    "pastas": [
@@ -135,7 +135,7 @@
   },
   {
    "nome": "02 — SEMESTRE ATUAL",
-   "arquivos": 0,
+   "arquivos": 1,
    "subpastas": 1,
    "link": "https://drive.google.com/drive/folders/1JvNf1ydqcLdaw00O7lqS1MOT3o0xWZ1v",
    "pastas": [
@@ -148,7 +148,7 @@
   },
   {
    "nome": "03 — PROVAS E REVISÕES",
-   "arquivos": 1,
+   "arquivos": 2,
    "subpastas": 9,
    "link": "https://drive.google.com/drive/folders/1GMGRAAYUr832xokDm4PBjjk13NkS9isw",
    "pastas": [
@@ -201,7 +201,7 @@
   },
   {
    "nome": "04 — TRABALHOS E SEMINÁRIOS",
-   "arquivos": 2,
+   "arquivos": 3,
    "subpastas": 7,
    "link": "https://drive.google.com/drive/folders/1GWDHyuwLHqNq2Y-5rSpQf9Ba3TKqAu3u",
    "pastas": [
@@ -244,7 +244,7 @@
   },
   {
    "nome": "05 — BIBLIOTECA DIGITAL",
-   "arquivos": 1,
+   "arquivos": 2,
    "subpastas": 7,
    "link": "https://drive.google.com/drive/folders/1tJg7T49xUKPeMKxA3X13CQo4xZ-gidWG",
    "pastas": [
@@ -287,7 +287,7 @@
   },
   {
    "nome": "06 — LABORATÓRIOS E CLÍNICA",
-   "arquivos": 0,
+   "arquivos": 1,
    "subpastas": 7,
    "link": "https://drive.google.com/drive/folders/1S2wGNJ_U_5ycEn5Qyo804h7G-dSpJ3t9",
    "pastas": [
@@ -330,7 +330,7 @@
   },
   {
    "nome": "07 — CERTIFICADOS E EVENTOS",
-   "arquivos": 1,
+   "arquivos": 2,
    "subpastas": 7,
    "link": "https://drive.google.com/drive/folders/1jTGSUyxx3wJA9b0MxhX_EaF56QkuFfdM",
    "pastas": [
@@ -373,7 +373,7 @@
   },
   {
    "nome": "08 — ESTÁGIOS E CARREIRA",
-   "arquivos": 2,
+   "arquivos": 3,
    "subpastas": 4,
    "link": "https://drive.google.com/drive/folders/1sSlzbMCxMFLOucAOX97gnmx8USO0qgO6",
    "pastas": [
@@ -401,7 +401,7 @@
   },
   {
    "nome": "09 — SEMESTRES CONCLUÍDOS",
-   "arquivos": 2,
+   "arquivos": 3,
    "subpastas": 4,
    "link": "https://drive.google.com/drive/folders/1HyV_Q4vawGiIcjLa7gejDlSaa_iDjKLa",
    "pastas": [
@@ -429,18 +429,18 @@
   },
   {
    "nome": "10 — FINANCEIRO ACADÊMICO",
-   "arquivos": 3,
+   "arquivos": 2,
    "subpastas": 4,
    "link": "https://drive.google.com/drive/folders/1-QGSZLcvrXLHanM72_61jsUNYmNKmtRw",
    "pastas": [
     {
      "nome": "01 — MENSALIDADES",
-     "arquivos": 2,
+     "arquivos": 1,
      "link": "https://drive.google.com/drive/folders/1vx3936Wc-b7yuwsDqqff73cnSrcw3IQ8"
     },
     {
      "nome": "02 — COMPROVANTES DE PAGAMENTO",
-     "arquivos": 1,
+     "arquivos": 0,
      "link": "https://drive.google.com/drive/folders/1CDo2yaUkh74DWLvu_Mw7UWsep89A_qVX"
     },
     {
@@ -457,7 +457,7 @@
   },
   {
    "nome": "11 — RECEBIDOS DA INSTITUIÇÃO (documentos antigos)",
-   "arquivos": 2,
+   "arquivos": 3,
    "subpastas": 2,
    "link": "https://drive.google.com/drive/folders/1zkmla4TE0l5NSOjXQHaCFrqIY_nUeMmG",
    "pastas": [
@@ -474,7 +474,7 @@
    ]
   }
  ],
- "totalArquivos": 26,
+ "totalArquivos": 36,
  "totalPastas": 78,
  "financeiro": [
   {
@@ -490,7 +490,14 @@
    "nome": "00 — CENTRAL ACADÊMICA",
    "id": "1XlVO3ZAezJC59w5T07H2mXWr4Cf42CQH",
    "link": "https://drive.google.com/drive/folders/1XlVO3ZAezJC59w5T07H2mXWr4Cf42CQH",
-   "arquivos": [],
+   "arquivos": [
+    {
+     "nome": "00 · Painel geral — Central Acadêmica",
+     "link": "https://docs.google.com/spreadsheets/d/1jptrtmNh2OrPDYu0GYOSl-89tm5bpw--bnoNnaOE9Uk/edit?usp=drivesdk",
+     "mod": "2026-11-19",
+     "tipo": "application/vnd.google-apps.spreadsheet"
+    }
+   ],
    "subpastas": [
     {
      "nome": "01 — PAINEL ACADÊMICO",
@@ -506,7 +513,7 @@
       {
        "nome": "PAINEL DE HORAS E TRAJETÓRIA — ODONTOLOGIA 2027",
        "link": "https://docs.google.com/spreadsheets/d/1tg1HPlK0dgLEOGH6Lz-B5wu8T_Dsxkv4SXB8sso92U0/edit?usp=drivesdk",
-       "mod": "2026-11-13",
+       "mod": "2026-11-19",
        "tipo": "application/vnd.google-apps.spreadsheet"
       }
      ]
@@ -612,7 +619,14 @@
    "nome": "01 — MATRÍCULA E DOCUMENTOS",
    "id": "1e2zTcpcJrlPfytuCyUgE5JmCT9G2B_Ss",
    "link": "https://drive.google.com/drive/folders/1e2zTcpcJrlPfytuCyUgE5JmCT9G2B_Ss",
-   "arquivos": [],
+   "arquivos": [
+    {
+     "nome": "01 · Matrícula — documentos e pendências",
+     "link": "https://docs.google.com/spreadsheets/d/1cJuHeQOZoCvCouPHA8eNes4wtvnbPjCz5aWQDOs-clo/edit?usp=drivesdk",
+     "mod": "2026-11-19",
+     "tipo": "application/vnd.google-apps.spreadsheet"
+    }
+   ],
    "subpastas": [
     {
      "nome": "01 — DOCUMENTOS PESSOAIS",
@@ -669,7 +683,14 @@
    "nome": "02 — SEMESTRE ATUAL",
    "id": "1JvNf1ydqcLdaw00O7lqS1MOT3o0xWZ1v",
    "link": "https://drive.google.com/drive/folders/1JvNf1ydqcLdaw00O7lqS1MOT3o0xWZ1v",
-   "arquivos": [],
+   "arquivos": [
+    {
+     "nome": "02 · Semestre atual — disciplinas e notas",
+     "link": "https://docs.google.com/spreadsheets/d/1Q1dHWPHMjN3lXyegZ-Vol2GV6hpf95mO3gIUe1wJFmA/edit?usp=drivesdk",
+     "mod": "2026-11-19",
+     "tipo": "application/vnd.google-apps.spreadsheet"
+    }
+   ],
    "subpastas": [
     {
      "nome": "01 — Disciplinas do 1º período",
@@ -683,7 +704,14 @@
    "nome": "03 — PROVAS E REVISÕES",
    "id": "1GMGRAAYUr832xokDm4PBjjk13NkS9isw",
    "link": "https://drive.google.com/drive/folders/1GMGRAAYUr832xokDm4PBjjk13NkS9isw",
-   "arquivos": [],
+   "arquivos": [
+    {
+     "nome": "03 · Provas e revisões",
+     "link": "https://docs.google.com/spreadsheets/d/1DnXG9DzUAwpol3lsXlVuM1NITueCmUUtLrDi9yD0mNE/edit?usp=drivesdk",
+     "mod": "2026-11-19",
+     "tipo": "application/vnd.google-apps.spreadsheet"
+    }
+   ],
    "subpastas": [
     {
      "nome": "01 — Calendário de Avaliações",
@@ -754,6 +782,12 @@
    "link": "https://drive.google.com/drive/folders/1GWDHyuwLHqNq2Y-5rSpQf9Ba3TKqAu3u",
    "arquivos": [
     {
+     "nome": "04 · Trabalhos e seminários",
+     "link": "https://docs.google.com/spreadsheets/d/1d31cEz9GUTLLeLaHa9F1tJS01FLcfB0MJbegR3KBLZQ/edit?usp=drivesdk",
+     "mod": "2026-11-19",
+     "tipo": "application/vnd.google-apps.spreadsheet"
+    },
+    {
      "nome": "GERENCIADOR DE TRABALHOS ACADÊMICOS",
      "link": "https://docs.google.com/spreadsheets/d/1KS8Fdo5vpeW0nVB5zzd8Z4n9S1GTIl4CdmKDlSbIqxY/edit?usp=drivesdk",
      "mod": "2026-11-13",
@@ -818,6 +852,12 @@
    "link": "https://drive.google.com/drive/folders/1tJg7T49xUKPeMKxA3X13CQo4xZ-gidWG",
    "arquivos": [
     {
+     "nome": "05 · Biblioteca de odontologia",
+     "link": "https://docs.google.com/spreadsheets/d/1Y_DQe3HHLdDPOQfJFZsEnU-CK_hZJBRdw9ZDnjrT01A/edit?usp=drivesdk",
+     "mod": "2026-11-19",
+     "tipo": "application/vnd.google-apps.spreadsheet"
+    },
+    {
      "nome": "CATÁLOGO DA BIBLIOTECA DIGITAL",
      "link": "https://docs.google.com/spreadsheets/d/1NhSEvVNlA6hIHRKqiV8s_gNGKCxvW12viQOk9RjS1zs/edit?usp=drivesdk",
      "mod": "2026-11-13",
@@ -873,7 +913,14 @@
    "nome": "06 — LABORATÓRIOS E CLÍNICA",
    "id": "1S2wGNJ_U_5ycEn5Qyo804h7G-dSpJ3t9",
    "link": "https://drive.google.com/drive/folders/1S2wGNJ_U_5ycEn5Qyo804h7G-dSpJ3t9",
-   "arquivos": [],
+   "arquivos": [
+    {
+     "nome": "06 · Laboratório e clínica",
+     "link": "https://docs.google.com/spreadsheets/d/1CWcGf8HWUY6ZDVGv6GqZe4QGnLISkd2qtlUvlAiNRbw/edit?usp=drivesdk",
+     "mod": "2026-11-19",
+     "tipo": "application/vnd.google-apps.spreadsheet"
+    }
+   ],
    "subpastas": [
     {
      "nome": "01 — Orientações dos Laboratórios",
@@ -923,7 +970,14 @@
    "nome": "07 — CERTIFICADOS E EVENTOS",
    "id": "1jTGSUyxx3wJA9b0MxhX_EaF56QkuFfdM",
    "link": "https://drive.google.com/drive/folders/1jTGSUyxx3wJA9b0MxhX_EaF56QkuFfdM",
-   "arquivos": [],
+   "arquivos": [
+    {
+     "nome": "07 · Certificados e horas complementares",
+     "link": "https://docs.google.com/spreadsheets/d/1Ep9kcWLowdKgNGZWUH7bpVr3-alTGtv_LzvHt3GBT0I/edit?usp=drivesdk",
+     "mod": "2026-11-19",
+     "tipo": "application/vnd.google-apps.spreadsheet"
+    }
+   ],
    "subpastas": [
     {
      "nome": "01 — Congressos e Simpósios",
@@ -980,7 +1034,14 @@
    "nome": "08 — ESTÁGIOS E CARREIRA",
    "id": "1sSlzbMCxMFLOucAOX97gnmx8USO0qgO6",
    "link": "https://drive.google.com/drive/folders/1sSlzbMCxMFLOucAOX97gnmx8USO0qgO6",
-   "arquivos": [],
+   "arquivos": [
+    {
+     "nome": "08 · Estágios e carreira",
+     "link": "https://docs.google.com/spreadsheets/d/1gJOTgG8WwWTsayA-zrwb27WitiTIhWPtQeGWN4CcgR0/edit?usp=drivesdk",
+     "mod": "2026-11-19",
+     "tipo": "application/vnd.google-apps.spreadsheet"
+    }
+   ],
    "subpastas": [
     {
      "nome": "01 — ORIENTAÇÕES",
@@ -1027,6 +1088,12 @@
    "link": "https://drive.google.com/drive/folders/1HyV_Q4vawGiIcjLa7gejDlSaa_iDjKLa",
    "arquivos": [
     {
+     "nome": "09 · Semestres concluídos",
+     "link": "https://docs.google.com/spreadsheets/d/1i2mV_tLflgKkiKe0316Jz1yoL7522jEj_wOLESYbQZ0/edit?usp=drivesdk",
+     "mod": "2026-11-19",
+     "tipo": "application/vnd.google-apps.spreadsheet"
+    },
+    {
      "nome": "Atalho — PAINEL DE HORAS E TRAJETÓRIA",
      "link": "https://drive.google.com/file/d/1GGjc2gRArYOBXsI-SHQIrmoNrhqODcZV/view?usp=drivesdk",
      "mod": "2026-11-13",
@@ -1071,7 +1138,14 @@
    "nome": "10 — FINANCEIRO ACADÊMICO",
    "id": "1-QGSZLcvrXLHanM72_61jsUNYmNKmtRw",
    "link": "https://drive.google.com/drive/folders/1-QGSZLcvrXLHanM72_61jsUNYmNKmtRw",
-   "arquivos": [],
+   "arquivos": [
+    {
+     "nome": "10 · Financeiro acadêmico",
+     "link": "https://docs.google.com/spreadsheets/d/1PGiISSdUClj35Y1eR6PNvN02bs7GilV-qIVeVgSyCus/edit?usp=drivesdk",
+     "mod": "2026-11-19",
+     "tipo": "application/vnd.google-apps.spreadsheet"
+    }
+   ],
    "subpastas": [
     {
      "nome": "01 — MENSALIDADES",
@@ -1083,12 +1157,6 @@
        "link": "https://drive.google.com/file/d/1oMvzk0VOlbGpAtiEIu2phlXfh3kHOSjq/view?usp=drivesdk",
        "mod": "2026-11-13",
        "tipo": "application/vnd.google-apps.shortcut"
-      },
-      {
-       "nome": "UNIFAFIBE — Boleto SICOOB 41247370 — 02-10-2026.pdf",
-       "link": "https://drive.google.com/file/d/1CVoIF_OzWycsrI5TTKAavBbR46Ubr6WE/view?usp=drivesdk",
-       "mod": "2026-11-13",
-       "tipo": "application/pdf"
       }
      ]
     },
@@ -1096,14 +1164,7 @@
      "nome": "02 — COMPROVANTES DE PAGAMENTO",
      "id": "1CDo2yaUkh74DWLvu_Mw7UWsep89A_qVX",
      "link": "https://drive.google.com/drive/folders/1CDo2yaUkh74DWLvu_Mw7UWsep89A_qVX",
-     "arquivos": [
-      {
-       "nome": "Atalho — pasta Pagamentos (boleto SICOOB de 02/10/2026)",
-       "link": "https://drive.google.com/file/d/15K027-j_vIUVFX70rC4c3EWt4mbyGWZi/view?usp=drivesdk",
-       "mod": "2026-11-13",
-       "tipo": "application/vnd.google-apps.shortcut"
-      }
-     ]
+     "arquivos": []
     },
     {
      "nome": "03 — BOLSAS E DESCONTOS",
@@ -1123,7 +1184,14 @@
    "nome": "11 — RECEBIDOS DA INSTITUIÇÃO (documentos antigos)",
    "id": "1zkmla4TE0l5NSOjXQHaCFrqIY_nUeMmG",
    "link": "https://drive.google.com/drive/folders/1zkmla4TE0l5NSOjXQHaCFrqIY_nUeMmG",
-   "arquivos": [],
+   "arquivos": [
+    {
+     "nome": "11 · Documentos recebidos da instituição",
+     "link": "https://docs.google.com/spreadsheets/d/1G6vZ8GP18FFSkf5h9fLOWQrkLN0eyLUpZHkg0cePdJo/edit?usp=drivesdk",
+     "mod": "2026-11-19",
+     "tipo": "application/vnd.google-apps.spreadsheet"
+    }
+   ],
    "subpastas": [
     {
      "nome": "Materiais e Martiz curricular ",
@@ -1144,9 +1212,9 @@
      "link": "https://drive.google.com/drive/folders/17N_FXuKsyasl__-W87k56dZjoZmzLOi8",
      "arquivos": [
       {
-       "nome": "UNIFAFIBE - Boleto SICOOB - Unificado.PDF.pdf",
+       "nome": "UNIFAFIBE - Boleto - FAC CANCELADA.pdf",
        "link": "https://drive.google.com/file/d/1ntoGzVFmMILE5tk7VHxtWY1xk_3XQk19/view?usp=drivesdk",
-       "mod": "2026-10-03",
+       "mod": "2026-11-19",
        "tipo": "application/pdf"
       }
      ]
@@ -1169,13 +1237,7 @@
   },
   "comprovantes": {
    "link": "https://drive.google.com/drive/folders/1CDo2yaUkh74DWLvu_Mw7UWsep89A_qVX",
-   "arquivos": [
-    {
-     "nome": "Atalho — pasta Pagamentos (boleto SICOOB de 02/10/2026)",
-     "link": "https://drive.google.com/file/d/15K027-j_vIUVFX70rC4c3EWt4mbyGWZi/view?usp=drivesdk",
-     "mod": "2026-11-13"
-    }
-   ]
+   "arquivos": []
   },
   "mensalidades": {
    "link": "https://drive.google.com/drive/folders/1vx3936Wc-b7yuwsDqqff73cnSrcw3IQ8",
@@ -1183,11 +1245,6 @@
     {
      "nome": "Atalho — PAINEL DE HORAS E TRAJETÓRIA",
      "link": "https://drive.google.com/file/d/1oMvzk0VOlbGpAtiEIu2phlXfh3kHOSjq/view?usp=drivesdk",
-     "mod": "2026-11-13"
-    },
-    {
-     "nome": "UNIFAFIBE — Boleto SICOOB 41247370 — 02-10-2026.pdf",
-     "link": "https://drive.google.com/file/d/1CVoIF_OzWycsrI5TTKAavBbR46Ubr6WE/view?usp=drivesdk",
      "mod": "2026-11-13"
     }
    ]
@@ -1267,10 +1324,10 @@
   {
    "descricao": "Parcela 1 — mensalidade adiantada",
    "valor": 1102.4,
-   "vencimento": "2026-10-05",
+   "vencimento": null,
    "pagoEm": "2026-10-26",
    "status": "pago",
-   "obs": "Pago adiantado em 26/10/2026 com 30% de desconto. O boleto emitido era de R$ 970,60.",
+   "obs": "Pago adiantado em 26/10/2026, com 30% de desconto.",
    "pasta": "02 — COMPROVANTES DE PAGAMENTO"
   }
  ]
